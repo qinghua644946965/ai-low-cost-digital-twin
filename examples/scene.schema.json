@@ -1,0 +1,6 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema", "title":"Spatial Semantic Scene MVP", "type":"object",
+  "required":["schema_version","name","objects"],
+  "properties":{"schema_version":{"const":"0.1"},"name":{"type":"string"},"units":{"const":"meters"},"objects":{"type":"array","minItems":1,"items":{"type":"object","required":["id","primitive"],"properties":{"id":{"type":"string","minLength":1},"primitive":{"enum":["box","cylinder","sphere"]},"dimensions":{"$ref":"#/$defs/vec3"},"radius":{"type":"number","exclusiveMinimum":0},"depth":{"type":"number","exclusiveMinimum":0},"position":{"$ref":"#/$defs/vec3"},"rotation_deg":{"$ref":"#/$defs/vec3"},"color":{"type":"array","minItems":4,"maxItems":4,"items":{"type":"number","minimum":0,"maximum":1}}}}}},
+  "$defs":{"vec3":{"type":"array","minItems":3,"maxItems":3,"items":{"type":"number"}}}
+}

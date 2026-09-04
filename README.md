@@ -1,4 +1,71 @@
-# AI 驱动的低成本数字孪生开源平台构想
+# AI 辅助低成本数字孪生
+
+> 工作流、开放规范与参考实现：探索如何利用通用 AI、标准组件和人工校准，降低数字孪生建设、交付与维护的总成本、流程复杂度和风险。
+
+本项目不是一个已经验证降本效果的成熟平台，也不把“AI 自动生成 3D 页面”当作壁垒。它以可运行参考实现探索：哪些环节适合 AI 自动化，哪些事实必须由人确认，以及如何把一次性的 AI 能力组织成可重复、可核验、可替换的数字孪生生产流程。
+
+## 可运行 MVP（v0.1）
+
+仓库现在包含最小闭环：`空间语义 JSON → compiler → 极简 IR → Blender executor → .blend 积木场景`。
+
+> **验证边界：** 当前空间 JSON、场景细化和遥测均为人工规则生成或模拟数据。本版本验证的是软件管线，不代表已经验证“照片自动重建”“真实设备接入”或“降低总成本”。详见 [MVP 审计](AUDIT.md)。
+
+当前支持 `box`、`cylinder`、`sphere`，使用米、XYZ 位置、XYZ 欧拉角和 RGBA 颜色。示例输入在 `examples/desktop.scene.json`；`src/digital_twin/ai_input.py` 保留了以后接入“照片/自然语言 → 空间语义”的边界，当前不调用真实 AI API。
+
+### 一键运行
+
+要求 Python 3.10+ 和 Blender。PowerShell 中执行：
+
+```powershell
+cd D:\workspace\ai-low-cost-digital-twin
+.\scripts\run_demo.ps1
+```
+
+生成 `build/desktop.ir.json` 和 `build/desktop.blend`。打开结果：
+
+```powershell
+& "D:\Program Files\blender-5.2.1-windows-x64\blender.exe" ".\build\desktop.blend"
+```
+
+直接显示 Blender 执行窗口可运行 `.\scripts\run_demo.ps1 -ShowWindow`。
+
+运行测试：
+
+```powershell
+$env:PYTHONPATH = ".\src"
+python -m unittest discover -s tests -v
+```
+
+Executor 默认只重建 `DigitalTwinMVP` Collection，并给对象写入稳定的 `digital_twin_id`，不依赖当前选中对象、模式或工作区；演示脚本额外传入 `--clear-scene`，确保干净验证。重复运行相同输入会得到确定的场景。
+
+### Web 数字孪生闭环
+
+Web MVP 包含 Blender GLB 导出、对象清单、Three.js 场景、点击选中、设备详情和 WebSocket 模拟实时指标。
+
+```powershell
+cd D:\workspace\ai-low-cost-digital-twin
+.\scripts\build_web_mvp.ps1
+cd web
+npm start
+```
+
+浏览器访问 `http://127.0.0.1:8787`。开发模式运行 `npm run dev` 后访问 `http://127.0.0.1:5173`。
+
+### 当前效果
+
+| Blender primitive 场景与材质渲染 | Web 端资产选择与实时指标演示 |
+| --- | --- |
+| ![Blender 机房场景渲染](docs/images/blender-render.png) | ![Web 数字孪生交互界面](docs/images/web-digital-twin.png) |
+
+当前参考实现包括：
+
+- 空间语义 JSON、校验 compiler 和极简 IR；
+- Blender primitive executor、材质配置、稳定对象 ID 和 GLB 导出；
+- Three.js 场景、资产列表、点击选择、详情面板和状态着色；
+- 用于验证数据流的模拟 REST API 与 WebSocket 遥测；
+- 从照片/自然语言生成语义、真实数据适配器和人工校准流程的扩展边界。
+
+审计结论、尚未验证的命题和真实现场实验门槛见 [MVP 审计](AUDIT.md)。
 
 **中文 | [English](README.en.md)**
 

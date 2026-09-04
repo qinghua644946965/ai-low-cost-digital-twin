@@ -1,4 +1,8 @@
-# An AI-Driven, Low-Cost Open-Source Digital Twin Platform: A Concept
+# AI-Assisted Low-Cost Digital Twins
+
+> Workflows, open specifications, and a reference implementation for exploring how general-purpose AI, standard components, and human calibration can reduce total delivery cost, process complexity, and risk.
+
+This is an experimental project, not a mature platform with validated cost savings. It treats AI-generated 3D pages as a replaceable production capability rather than a product moat. The goal is to discover which steps can be automated, which facts require human confirmation, and how one-off AI assistance can become a repeatable, inspectable, and portable digital-twin workflow.
 
 **[中文](README.md) | English**
 

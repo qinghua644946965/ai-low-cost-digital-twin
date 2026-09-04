@@ -1,0 +1,4906 @@
+{
+  "schema_version": "0.1",
+  "name": "Server room complexity level 3 - operational semantics",
+  "units": "meters",
+  "objects": [
+    {
+      "id": "floor",
+      "primitive": "box",
+      "dimensions": [
+        10,
+        7,
+        0.12
+      ],
+      "position": [
+        0,
+        0,
+        -0.06
+      ],
+      "color": [
+        0.1,
+        0.12,
+        0.15,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.92,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "back_wall",
+      "primitive": "box",
+      "dimensions": [
+        10,
+        0.12,
+        3.4
+      ],
+      "position": [
+        0,
+        3.5,
+        1.7
+      ],
+      "color": [
+        0.52,
+        0.55,
+        0.59,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.92,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "left_wall",
+      "primitive": "box",
+      "dimensions": [
+        0.12,
+        7,
+        3.4
+      ],
+      "position": [
+        -5,
+        0,
+        1.7
+      ],
+      "color": [
+        0.43,
+        0.46,
+        0.5,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.92,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "right_wall",
+      "primitive": "box",
+      "dimensions": [
+        0.12,
+        7,
+        3.4
+      ],
+      "position": [
+        5,
+        0,
+        1.7
+      ],
+      "color": [
+        0.43,
+        0.46,
+        0.5,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.92,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "cold_aisle",
+      "primitive": "box",
+      "dimensions": [
+        7.2,
+        1.15,
+        0.025
+      ],
+      "position": [
+        0,
+        0,
+        0.015
+      ],
+      "color": [
+        0.02,
+        0.25,
+        0.58,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "hot_aisle_back",
+      "primitive": "box",
+      "dimensions": [
+        7.2,
+        0.55,
+        0.025
+      ],
+      "position": [
+        0,
+        2.35,
+        0.015
+      ],
+      "color": [
+        0.55,
+        0.08,
+        0.03,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "hot_aisle_front",
+      "primitive": "box",
+      "dimensions": [
+        7.2,
+        0.55,
+        0.025
+      ],
+      "position": [
+        0,
+        -2.35,
+        0.015
+      ],
+      "color": [
+        0.55,
+        0.08,
+        0.03,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "rack_a1",
+      "primitive": "box",
+      "dimensions": [
+        0.82,
+        1.02,
+        2.25
+      ],
+      "position": [
+        -3.0,
+        1.35,
+        1.125
+      ],
+      "color": [
+        0.07,
+        0.09,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "RACK_A1",
+        "asset_type": "rack",
+        "zone": "server-room"
+      },
+      "material": {
+        "roughness": 0.24,
+        "metallic": 0.82,
+        "bevel_width": 0.028
+      }
+    },
+    {
+      "id": "rack_a1_door",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        2.08
+      ],
+      "position": [
+        -3.0,
+        0.81,
+        1.125
+      ],
+      "color": [
+        0.07,
+        0.09,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.24,
+        "metallic": 0.82,
+        "bevel_width": 0.028
+      }
+    },
+    {
+      "id": "server_a1_u1",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -3.0,
+        0.795,
+        0.48
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_a1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A1_U1",
+        "asset_type": "server",
+        "rack_id": "rack_a1",
+        "rack_unit": "u1",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_a1_u2",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -3.0,
+        0.795,
+        0.82
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_a1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A1_U2",
+        "asset_type": "server",
+        "rack_id": "rack_a1",
+        "rack_unit": "u2",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_a1_u3",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -3.0,
+        0.795,
+        1.16
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_a1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A1_U3",
+        "asset_type": "server",
+        "rack_id": "rack_a1",
+        "rack_unit": "u3",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_a1_u4",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -3.0,
+        0.795,
+        1.5
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_a1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A1_U4",
+        "asset_type": "server",
+        "rack_id": "rack_a1",
+        "rack_unit": "u4",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "status_a1",
+      "primitive": "sphere",
+      "radius": 0.06,
+      "position": [
+        -3.0,
+        0.755,
+        1.91
+      ],
+      "color": [
+        0.08,
+        1,
+        0.18,
+        1
+      ],
+      "parent_id": "rack_a1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_type": "status_beacon",
+        "rack_id": "rack_a1"
+      },
+      "material": {
+        "roughness": 0.18,
+        "metallic": 0.05,
+        "emission_color": [
+          0.08,
+          1,
+          0.18,
+          1
+        ],
+        "emission_strength": 5.0
+      }
+    },
+    {
+      "id": "rack_a2",
+      "primitive": "box",
+      "dimensions": [
+        0.82,
+        1.02,
+        2.25
+      ],
+      "position": [
+        -1.0,
+        1.35,
+        1.125
+      ],
+      "color": [
+        0.07,
+        0.09,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "RACK_A2",
+        "asset_type": "rack",
+        "zone": "server-room"
+      },
+      "material": {
+        "roughness": 0.24,
+        "metallic": 0.82,
+        "bevel_width": 0.028
+      }
+    },
+    {
+      "id": "rack_a2_door",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        2.08
+      ],
+      "position": [
+        -1.0,
+        0.81,
+        1.125
+      ],
+      "color": [
+        0.07,
+        0.09,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.24,
+        "metallic": 0.82,
+        "bevel_width": 0.028
+      }
+    },
+    {
+      "id": "server_a2_u1",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -1.0,
+        0.795,
+        0.48
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_a2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A2_U1",
+        "asset_type": "server",
+        "rack_id": "rack_a2",
+        "rack_unit": "u1",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_a2_u2",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -1.0,
+        0.795,
+        0.82
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_a2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A2_U2",
+        "asset_type": "server",
+        "rack_id": "rack_a2",
+        "rack_unit": "u2",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_a2_u3",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -1.0,
+        0.795,
+        1.16
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_a2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A2_U3",
+        "asset_type": "server",
+        "rack_id": "rack_a2",
+        "rack_unit": "u3",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_a2_u4",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -1.0,
+        0.795,
+        1.5
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_a2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A2_U4",
+        "asset_type": "server",
+        "rack_id": "rack_a2",
+        "rack_unit": "u4",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "status_a2",
+      "primitive": "sphere",
+      "radius": 0.06,
+      "position": [
+        -1.0,
+        0.755,
+        1.91
+      ],
+      "color": [
+        0.08,
+        1,
+        0.18,
+        1
+      ],
+      "parent_id": "rack_a2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_type": "status_beacon",
+        "rack_id": "rack_a2"
+      },
+      "material": {
+        "roughness": 0.18,
+        "metallic": 0.05,
+        "emission_color": [
+          0.08,
+          1,
+          0.18,
+          1
+        ],
+        "emission_strength": 5.0
+      }
+    },
+    {
+      "id": "rack_a3",
+      "primitive": "box",
+      "dimensions": [
+        0.82,
+        1.02,
+        2.25
+      ],
+      "position": [
+        1.0,
+        1.35,
+        1.125
+      ],
+      "color": [
+        0.07,
+        0.09,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "RACK_A3",
+        "asset_type": "rack",
+        "zone": "server-room"
+      },
+      "material": {
+        "roughness": 0.24,
+        "metallic": 0.82,
+        "bevel_width": 0.028
+      }
+    },
+    {
+      "id": "rack_a3_door",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        2.08
+      ],
+      "position": [
+        1.0,
+        0.81,
+        1.125
+      ],
+      "color": [
+        0.07,
+        0.09,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.24,
+        "metallic": 0.82,
+        "bevel_width": 0.028
+      }
+    },
+    {
+      "id": "server_a3_u1",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        1.0,
+        0.795,
+        0.48
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_a3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A3_U1",
+        "asset_type": "server",
+        "rack_id": "rack_a3",
+        "rack_unit": "u1",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_a3_u2",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        1.0,
+        0.795,
+        0.82
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_a3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A3_U2",
+        "asset_type": "server",
+        "rack_id": "rack_a3",
+        "rack_unit": "u2",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_a3_u3",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        1.0,
+        0.795,
+        1.16
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_a3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A3_U3",
+        "asset_type": "server",
+        "rack_id": "rack_a3",
+        "rack_unit": "u3",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_a3_u4",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        1.0,
+        0.795,
+        1.5
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_a3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A3_U4",
+        "asset_type": "server",
+        "rack_id": "rack_a3",
+        "rack_unit": "u4",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "status_a3",
+      "primitive": "sphere",
+      "radius": 0.06,
+      "position": [
+        1.0,
+        0.755,
+        1.91
+      ],
+      "color": [
+        0.08,
+        1,
+        0.18,
+        1
+      ],
+      "parent_id": "rack_a3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_type": "status_beacon",
+        "rack_id": "rack_a3"
+      },
+      "material": {
+        "roughness": 0.18,
+        "metallic": 0.05,
+        "emission_color": [
+          0.08,
+          1,
+          0.18,
+          1
+        ],
+        "emission_strength": 5.0
+      }
+    },
+    {
+      "id": "rack_a4",
+      "primitive": "box",
+      "dimensions": [
+        0.82,
+        1.02,
+        2.25
+      ],
+      "position": [
+        3.0,
+        1.35,
+        1.125
+      ],
+      "color": [
+        0.07,
+        0.09,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "RACK_A4",
+        "asset_type": "rack",
+        "zone": "server-room"
+      },
+      "material": {
+        "roughness": 0.24,
+        "metallic": 0.82,
+        "bevel_width": 0.028
+      }
+    },
+    {
+      "id": "rack_a4_door",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        2.08
+      ],
+      "position": [
+        3.0,
+        0.81,
+        1.125
+      ],
+      "color": [
+        0.07,
+        0.09,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.24,
+        "metallic": 0.82,
+        "bevel_width": 0.028
+      }
+    },
+    {
+      "id": "server_a4_u1",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        3.0,
+        0.795,
+        0.48
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_a4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A4_U1",
+        "asset_type": "server",
+        "rack_id": "rack_a4",
+        "rack_unit": "u1",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_a4_u2",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        3.0,
+        0.795,
+        0.82
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_a4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A4_U2",
+        "asset_type": "server",
+        "rack_id": "rack_a4",
+        "rack_unit": "u2",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_a4_u3",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        3.0,
+        0.795,
+        1.16
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_a4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A4_U3",
+        "asset_type": "server",
+        "rack_id": "rack_a4",
+        "rack_unit": "u3",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_a4_u4",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        3.0,
+        0.795,
+        1.5
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_a4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A4_U4",
+        "asset_type": "server",
+        "rack_id": "rack_a4",
+        "rack_unit": "u4",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "status_a4",
+      "primitive": "sphere",
+      "radius": 0.06,
+      "position": [
+        3.0,
+        0.755,
+        1.91
+      ],
+      "color": [
+        0.08,
+        1,
+        0.18,
+        1
+      ],
+      "parent_id": "rack_a4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_type": "status_beacon",
+        "rack_id": "rack_a4"
+      },
+      "material": {
+        "roughness": 0.18,
+        "metallic": 0.05,
+        "emission_color": [
+          0.08,
+          1,
+          0.18,
+          1
+        ],
+        "emission_strength": 5.0
+      }
+    },
+    {
+      "id": "rack_b1",
+      "primitive": "box",
+      "dimensions": [
+        0.82,
+        1.02,
+        2.25
+      ],
+      "position": [
+        -3.0,
+        -1.35,
+        1.125
+      ],
+      "color": [
+        0.07,
+        0.09,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "RACK_B1",
+        "asset_type": "rack",
+        "zone": "server-room"
+      },
+      "material": {
+        "roughness": 0.24,
+        "metallic": 0.82,
+        "bevel_width": 0.028
+      }
+    },
+    {
+      "id": "rack_b1_door",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        2.08
+      ],
+      "position": [
+        -3.0,
+        -0.81,
+        1.125
+      ],
+      "color": [
+        0.07,
+        0.09,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.24,
+        "metallic": 0.82,
+        "bevel_width": 0.028
+      }
+    },
+    {
+      "id": "server_b1_u1",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -3.0,
+        -0.795,
+        0.48
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_b1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B1_U1",
+        "asset_type": "server",
+        "rack_id": "rack_b1",
+        "rack_unit": "u1",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_b1_u2",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -3.0,
+        -0.795,
+        0.82
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_b1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B1_U2",
+        "asset_type": "server",
+        "rack_id": "rack_b1",
+        "rack_unit": "u2",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_b1_u3",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -3.0,
+        -0.795,
+        1.16
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_b1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B1_U3",
+        "asset_type": "server",
+        "rack_id": "rack_b1",
+        "rack_unit": "u3",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_b1_u4",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -3.0,
+        -0.795,
+        1.5
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_b1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B1_U4",
+        "asset_type": "server",
+        "rack_id": "rack_b1",
+        "rack_unit": "u4",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "status_b1",
+      "primitive": "sphere",
+      "radius": 0.06,
+      "position": [
+        -3.0,
+        -0.755,
+        1.91
+      ],
+      "color": [
+        0.08,
+        1,
+        0.18,
+        1
+      ],
+      "parent_id": "rack_b1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_type": "status_beacon",
+        "rack_id": "rack_b1"
+      },
+      "material": {
+        "roughness": 0.18,
+        "metallic": 0.05,
+        "emission_color": [
+          0.08,
+          1,
+          0.18,
+          1
+        ],
+        "emission_strength": 5.0
+      }
+    },
+    {
+      "id": "rack_b2",
+      "primitive": "box",
+      "dimensions": [
+        0.82,
+        1.02,
+        2.25
+      ],
+      "position": [
+        -1.0,
+        -1.35,
+        1.125
+      ],
+      "color": [
+        0.07,
+        0.09,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "RACK_B2",
+        "asset_type": "rack",
+        "zone": "server-room"
+      },
+      "material": {
+        "roughness": 0.24,
+        "metallic": 0.82,
+        "bevel_width": 0.028
+      }
+    },
+    {
+      "id": "rack_b2_door",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        2.08
+      ],
+      "position": [
+        -1.0,
+        -0.81,
+        1.125
+      ],
+      "color": [
+        0.07,
+        0.09,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.24,
+        "metallic": 0.82,
+        "bevel_width": 0.028
+      }
+    },
+    {
+      "id": "server_b2_u1",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -1.0,
+        -0.795,
+        0.48
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_b2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B2_U1",
+        "asset_type": "server",
+        "rack_id": "rack_b2",
+        "rack_unit": "u1",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_b2_u2",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -1.0,
+        -0.795,
+        0.82
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_b2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B2_U2",
+        "asset_type": "server",
+        "rack_id": "rack_b2",
+        "rack_unit": "u2",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_b2_u3",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -1.0,
+        -0.795,
+        1.16
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_b2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B2_U3",
+        "asset_type": "server",
+        "rack_id": "rack_b2",
+        "rack_unit": "u3",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_b2_u4",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -1.0,
+        -0.795,
+        1.5
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_b2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B2_U4",
+        "asset_type": "server",
+        "rack_id": "rack_b2",
+        "rack_unit": "u4",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "status_b2",
+      "primitive": "sphere",
+      "radius": 0.06,
+      "position": [
+        -1.0,
+        -0.755,
+        1.91
+      ],
+      "color": [
+        0.08,
+        1,
+        0.18,
+        1
+      ],
+      "parent_id": "rack_b2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_type": "status_beacon",
+        "rack_id": "rack_b2"
+      },
+      "material": {
+        "roughness": 0.18,
+        "metallic": 0.05,
+        "emission_color": [
+          0.08,
+          1,
+          0.18,
+          1
+        ],
+        "emission_strength": 5.0
+      }
+    },
+    {
+      "id": "rack_b3",
+      "primitive": "box",
+      "dimensions": [
+        0.82,
+        1.02,
+        2.25
+      ],
+      "position": [
+        1.0,
+        -1.35,
+        1.125
+      ],
+      "color": [
+        0.07,
+        0.09,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "RACK_B3",
+        "asset_type": "rack",
+        "zone": "server-room"
+      },
+      "material": {
+        "roughness": 0.24,
+        "metallic": 0.82,
+        "bevel_width": 0.028
+      }
+    },
+    {
+      "id": "rack_b3_door",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        2.08
+      ],
+      "position": [
+        1.0,
+        -0.81,
+        1.125
+      ],
+      "color": [
+        0.07,
+        0.09,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.24,
+        "metallic": 0.82,
+        "bevel_width": 0.028
+      }
+    },
+    {
+      "id": "server_b3_u1",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        1.0,
+        -0.795,
+        0.48
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_b3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B3_U1",
+        "asset_type": "server",
+        "rack_id": "rack_b3",
+        "rack_unit": "u1",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_b3_u2",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        1.0,
+        -0.795,
+        0.82
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_b3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B3_U2",
+        "asset_type": "server",
+        "rack_id": "rack_b3",
+        "rack_unit": "u2",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_b3_u3",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        1.0,
+        -0.795,
+        1.16
+      ],
+      "color": [
+        0.78,
+        0.055,
+        0.025,
+        1
+      ],
+      "parent_id": "rack_b3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B3_U3",
+        "asset_type": "server",
+        "rack_id": "rack_b3",
+        "rack_unit": "u3",
+        "status": "alarm",
+        "temperature_c": 46.8
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_b3_u4",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        1.0,
+        -0.795,
+        1.5
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_b3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B3_U4",
+        "asset_type": "server",
+        "rack_id": "rack_b3",
+        "rack_unit": "u4",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "status_b3",
+      "primitive": "sphere",
+      "radius": 0.06,
+      "position": [
+        1.0,
+        -0.755,
+        1.91
+      ],
+      "color": [
+        1,
+        0.08,
+        0.025,
+        1
+      ],
+      "parent_id": "rack_b3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_type": "status_beacon",
+        "rack_id": "rack_b3"
+      },
+      "material": {
+        "roughness": 0.18,
+        "metallic": 0.05,
+        "emission_color": [
+          1,
+          0.08,
+          0.025,
+          1
+        ],
+        "emission_strength": 5.0
+      }
+    },
+    {
+      "id": "rack_b4",
+      "primitive": "box",
+      "dimensions": [
+        0.82,
+        1.02,
+        2.25
+      ],
+      "position": [
+        3.0,
+        -1.35,
+        1.125
+      ],
+      "color": [
+        0.07,
+        0.09,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "RACK_B4",
+        "asset_type": "rack",
+        "zone": "server-room"
+      },
+      "material": {
+        "roughness": 0.24,
+        "metallic": 0.82,
+        "bevel_width": 0.028
+      }
+    },
+    {
+      "id": "rack_b4_door",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        2.08
+      ],
+      "position": [
+        3.0,
+        -0.81,
+        1.125
+      ],
+      "color": [
+        0.07,
+        0.09,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.24,
+        "metallic": 0.82,
+        "bevel_width": 0.028
+      }
+    },
+    {
+      "id": "server_b4_u1",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        3.0,
+        -0.795,
+        0.48
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_b4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B4_U1",
+        "asset_type": "server",
+        "rack_id": "rack_b4",
+        "rack_unit": "u1",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_b4_u2",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        3.0,
+        -0.795,
+        0.82
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_b4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B4_U2",
+        "asset_type": "server",
+        "rack_id": "rack_b4",
+        "rack_unit": "u2",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_b4_u3",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        3.0,
+        -0.795,
+        1.16
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_b4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B4_U3",
+        "asset_type": "server",
+        "rack_id": "rack_b4",
+        "rack_unit": "u3",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "server_b4_u4",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        3.0,
+        -0.795,
+        1.5
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.23,
+        1
+      ],
+      "parent_id": "rack_b4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B4_U4",
+        "asset_type": "server",
+        "rack_id": "rack_b4",
+        "rack_unit": "u4",
+        "status": "online",
+        "temperature_c": 24.6
+      },
+      "material": {
+        "roughness": 0.2,
+        "metallic": 0.86,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "status_b4",
+      "primitive": "sphere",
+      "radius": 0.06,
+      "position": [
+        3.0,
+        -0.755,
+        1.91
+      ],
+      "color": [
+        0.08,
+        1,
+        0.18,
+        1
+      ],
+      "parent_id": "rack_b4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_type": "status_beacon",
+        "rack_id": "rack_b4"
+      },
+      "material": {
+        "roughness": 0.18,
+        "metallic": 0.05,
+        "emission_color": [
+          0.08,
+          1,
+          0.18,
+          1
+        ],
+        "emission_strength": 5.0
+      }
+    },
+    {
+      "id": "cooling_left",
+      "primitive": "box",
+      "dimensions": [
+        1.0,
+        0.8,
+        2.35
+      ],
+      "position": [
+        -4.25,
+        2.75,
+        1.175
+      ],
+      "color": [
+        0.72,
+        0.77,
+        0.82,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "COOLING_LEFT",
+        "asset_type": "precision_cooling",
+        "status": "online",
+        "supply_temperature_c": 18.5
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "cooling_left_vent_1",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        0.12
+      ],
+      "position": [
+        -4.25,
+        2.33,
+        1.55
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.2,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "cooling_left_vent_2",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        0.12
+      ],
+      "position": [
+        -4.25,
+        2.33,
+        1.78
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.2,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "cooling_left_vent_3",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        0.12
+      ],
+      "position": [
+        -4.25,
+        2.33,
+        2.0100000000000002
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.2,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "cooling_right",
+      "primitive": "box",
+      "dimensions": [
+        1.0,
+        0.8,
+        2.35
+      ],
+      "position": [
+        4.25,
+        2.75,
+        1.175
+      ],
+      "color": [
+        0.72,
+        0.77,
+        0.82,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "COOLING_RIGHT",
+        "asset_type": "precision_cooling",
+        "status": "online",
+        "supply_temperature_c": 18.5
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "cooling_right_vent_1",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        0.12
+      ],
+      "position": [
+        4.25,
+        2.33,
+        1.55
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.2,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "cooling_right_vent_2",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        0.12
+      ],
+      "position": [
+        4.25,
+        2.33,
+        1.78
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.2,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "cooling_right_vent_3",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        0.12
+      ],
+      "position": [
+        4.25,
+        2.33,
+        2.0100000000000002
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.2,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "door_left_frame",
+      "primitive": "box",
+      "dimensions": [
+        0.12,
+        0.35,
+        2.5
+      ],
+      "position": [
+        -0.76,
+        3.28,
+        1.25
+      ],
+      "color": [
+        0.1,
+        0.12,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "door_right_frame",
+      "primitive": "box",
+      "dimensions": [
+        0.12,
+        0.35,
+        2.5
+      ],
+      "position": [
+        0.76,
+        3.28,
+        1.25
+      ],
+      "color": [
+        0.1,
+        0.12,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "door_top_frame",
+      "primitive": "box",
+      "dimensions": [
+        1.64,
+        0.35,
+        0.12
+      ],
+      "position": [
+        0,
+        3.28,
+        2.46
+      ],
+      "color": [
+        0.1,
+        0.12,
+        0.14,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "door",
+      "primitive": "box",
+      "dimensions": [
+        1.35,
+        0.08,
+        2.3
+      ],
+      "position": [
+        0,
+        3.2,
+        1.15
+      ],
+      "color": [
+        0.24,
+        0.3,
+        0.36,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "door_handle",
+      "primitive": "cylinder",
+      "radius": 0.055,
+      "depth": 0.12,
+      "position": [
+        0.48,
+        3.12,
+        1.15
+      ],
+      "color": [
+        0.9,
+        0.65,
+        0.12,
+        1
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.14,
+        "metallic": 0.94
+      }
+    },
+    {
+      "id": "cable_tray_left",
+      "primitive": "box",
+      "dimensions": [
+        0.32,
+        5.3,
+        0.16
+      ],
+      "position": [
+        -2.0,
+        0,
+        2.85
+      ],
+      "color": [
+        0.34,
+        0.36,
+        0.38,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.25,
+        "metallic": 0.8,
+        "bevel_width": 0.02
+      }
+    },
+    {
+      "id": "cable_tray_right",
+      "primitive": "box",
+      "dimensions": [
+        0.32,
+        5.3,
+        0.16
+      ],
+      "position": [
+        2.0,
+        0,
+        2.85
+      ],
+      "color": [
+        0.34,
+        0.36,
+        0.38,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.25,
+        "metallic": 0.8,
+        "bevel_width": 0.02
+      }
+    },
+    {
+      "id": "ceiling_light_1",
+      "primitive": "box",
+      "dimensions": [
+        3.2,
+        0.16,
+        0.07
+      ],
+      "position": [
+        0,
+        -2.3,
+        3.05
+      ],
+      "color": [
+        1,
+        0.9,
+        0.55,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.15,
+        "metallic": 0.0,
+        "emission_color": [
+          1,
+          0.9,
+          0.55,
+          1
+        ],
+        "emission_strength": 3.0
+      }
+    },
+    {
+      "id": "ceiling_light_2",
+      "primitive": "box",
+      "dimensions": [
+        3.2,
+        0.16,
+        0.07
+      ],
+      "position": [
+        0,
+        -0.75,
+        3.05
+      ],
+      "color": [
+        1,
+        0.9,
+        0.55,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.15,
+        "metallic": 0.0,
+        "emission_color": [
+          1,
+          0.9,
+          0.55,
+          1
+        ],
+        "emission_strength": 3.0
+      }
+    },
+    {
+      "id": "ceiling_light_3",
+      "primitive": "box",
+      "dimensions": [
+        3.2,
+        0.16,
+        0.07
+      ],
+      "position": [
+        0,
+        0.75,
+        3.05
+      ],
+      "color": [
+        1,
+        0.9,
+        0.55,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.15,
+        "metallic": 0.0,
+        "emission_color": [
+          1,
+          0.9,
+          0.55,
+          1
+        ],
+        "emission_strength": 3.0
+      }
+    },
+    {
+      "id": "ceiling_light_4",
+      "primitive": "box",
+      "dimensions": [
+        3.2,
+        0.16,
+        0.07
+      ],
+      "position": [
+        0,
+        2.3,
+        3.05
+      ],
+      "color": [
+        1,
+        0.9,
+        0.55,
+        1
+      ],
+      "metadata": {
+        "source": "synthetic-mvp"
+      },
+      "material": {
+        "roughness": 0.15,
+        "metallic": 0.0,
+        "emission_color": [
+          1,
+          0.9,
+          0.55,
+          1
+        ],
+        "emission_strength": 3.0
+      }
+    },
+    {
+      "id": "temperature_sensor_1",
+      "primitive": "cylinder",
+      "radius": 0.1,
+      "depth": 0.22,
+      "position": [
+        -3.4,
+        3.3,
+        2.45
+      ],
+      "color": [
+        1,
+        0.55,
+        0.03,
+        1
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "TEMPERATURE_SENSOR_1",
+        "asset_type": "temperature_sensor",
+        "status": "online",
+        "temperature_c": 25.2
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "temperature_sensor_2",
+      "primitive": "cylinder",
+      "radius": 0.1,
+      "depth": 0.22,
+      "position": [
+        -1.7,
+        3.3,
+        2.45
+      ],
+      "color": [
+        1,
+        0.55,
+        0.03,
+        1
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "TEMPERATURE_SENSOR_2",
+        "asset_type": "temperature_sensor",
+        "status": "online",
+        "temperature_c": 25.2
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "temperature_sensor_3",
+      "primitive": "cylinder",
+      "radius": 0.1,
+      "depth": 0.22,
+      "position": [
+        0,
+        3.3,
+        2.45
+      ],
+      "color": [
+        1,
+        0.55,
+        0.03,
+        1
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "TEMPERATURE_SENSOR_3",
+        "asset_type": "temperature_sensor",
+        "status": "online",
+        "temperature_c": 25.2
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "temperature_sensor_4",
+      "primitive": "cylinder",
+      "radius": 0.1,
+      "depth": 0.22,
+      "position": [
+        1.7,
+        3.3,
+        2.45
+      ],
+      "color": [
+        1,
+        0.55,
+        0.03,
+        1
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "TEMPERATURE_SENSOR_4",
+        "asset_type": "temperature_sensor",
+        "status": "online",
+        "temperature_c": 25.2
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "temperature_sensor_5",
+      "primitive": "cylinder",
+      "radius": 0.1,
+      "depth": 0.22,
+      "position": [
+        3.4,
+        3.3,
+        2.45
+      ],
+      "color": [
+        1,
+        0.55,
+        0.03,
+        1
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "TEMPERATURE_SENSOR_5",
+        "asset_type": "temperature_sensor",
+        "status": "online",
+        "temperature_c": 25.2
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "floor_tile_1_1",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -4.5,
+        -2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 1
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_1_2",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -3.5,
+        -2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 2
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_1_3",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -2.5,
+        -2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 3
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_1_4",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -1.5,
+        -2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 4
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_1_5",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -0.5,
+        -2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 5
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_1_6",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        0.5,
+        -2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 6
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_1_7",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        1.5,
+        -2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 7
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_1_8",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        2.5,
+        -2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 8
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_1_9",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        3.5,
+        -2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 9
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_1_10",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        4.5,
+        -2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 10
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_2_1",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -4.5,
+        -1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 1
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_2_2",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -3.5,
+        -1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 2
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_2_3",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -2.5,
+        -1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 3
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_2_4",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -1.5,
+        -1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 4
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_2_5",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -0.5,
+        -1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 5
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_2_6",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        0.5,
+        -1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 6
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_2_7",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        1.5,
+        -1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 7
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_2_8",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        2.5,
+        -1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 8
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_2_9",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        3.5,
+        -1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 9
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_2_10",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        4.5,
+        -1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 10
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_3_1",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -4.5,
+        -0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 1
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_3_2",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -3.5,
+        -0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 2
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_3_3",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -2.5,
+        -0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 3
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_3_4",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -1.5,
+        -0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 4
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_3_5",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -0.5,
+        -0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 5
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_3_6",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        0.5,
+        -0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 6
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_3_7",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        1.5,
+        -0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 7
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_3_8",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        2.5,
+        -0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 8
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_3_9",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        3.5,
+        -0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 9
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_3_10",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        4.5,
+        -0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 10
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_4_1",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -4.5,
+        0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 1
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_4_2",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -3.5,
+        0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 2
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_4_3",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -2.5,
+        0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 3
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_4_4",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -1.5,
+        0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 4
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_4_5",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -0.5,
+        0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 5
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_4_6",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        0.5,
+        0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 6
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_4_7",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        1.5,
+        0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 7
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_4_8",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        2.5,
+        0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 8
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_4_9",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        3.5,
+        0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 9
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_4_10",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        4.5,
+        0.6,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 10
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_5_1",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -4.5,
+        1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 1
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_5_2",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -3.5,
+        1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 2
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_5_3",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -2.5,
+        1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 3
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_5_4",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -1.5,
+        1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 4
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_5_5",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -0.5,
+        1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 5
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_5_6",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        0.5,
+        1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 6
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_5_7",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        1.5,
+        1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 7
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_5_8",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        2.5,
+        1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 8
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_5_9",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        3.5,
+        1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 9
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_5_10",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        4.5,
+        1.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 10
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_6_1",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -4.5,
+        2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 1
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_6_2",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -3.5,
+        2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 2
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_6_3",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -2.5,
+        2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 3
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_6_4",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -1.5,
+        2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 4
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_6_5",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        -0.5,
+        2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 5
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_6_6",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        0.5,
+        2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 6
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_6_7",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        1.5,
+        2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 7
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_6_8",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        2.5,
+        2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 8
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_6_9",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        3.5,
+        2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 9
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "floor_tile_6_10",
+      "primitive": "box",
+      "dimensions": [
+        0.96,
+        0.96,
+        0.035
+      ],
+      "position": [
+        4.5,
+        2.8,
+        0.035
+      ],
+      "color": [
+        0.17,
+        0.19,
+        0.22,
+        1
+      ],
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 10
+      },
+      "material": {
+        "roughness": 0.72,
+        "metallic": 0.12,
+        "bevel_width": 0.012
+      }
+    },
+    {
+      "id": "power_bus_1",
+      "primitive": "cylinder",
+      "radius": 0.045,
+      "depth": 5.2,
+      "position": [
+        -3,
+        0,
+        3.02
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "color": [
+        0.8,
+        0.18,
+        0.04,
+        1
+      ],
+      "metadata": {
+        "asset_type": "power_bus",
+        "voltage_v": 380
+      },
+      "material": {
+        "roughness": 0.14,
+        "metallic": 0.94
+      }
+    },
+    {
+      "id": "power_bus_2",
+      "primitive": "cylinder",
+      "radius": 0.045,
+      "depth": 5.2,
+      "position": [
+        -1,
+        0,
+        3.02
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "color": [
+        0.8,
+        0.18,
+        0.04,
+        1
+      ],
+      "metadata": {
+        "asset_type": "power_bus",
+        "voltage_v": 380
+      },
+      "material": {
+        "roughness": 0.14,
+        "metallic": 0.94
+      }
+    },
+    {
+      "id": "power_bus_3",
+      "primitive": "cylinder",
+      "radius": 0.045,
+      "depth": 5.2,
+      "position": [
+        1,
+        0,
+        3.02
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "color": [
+        0.8,
+        0.18,
+        0.04,
+        1
+      ],
+      "metadata": {
+        "asset_type": "power_bus",
+        "voltage_v": 380
+      },
+      "material": {
+        "roughness": 0.14,
+        "metallic": 0.94
+      }
+    },
+    {
+      "id": "power_bus_4",
+      "primitive": "cylinder",
+      "radius": 0.045,
+      "depth": 5.2,
+      "position": [
+        3,
+        0,
+        3.02
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "color": [
+        0.8,
+        0.18,
+        0.04,
+        1
+      ],
+      "metadata": {
+        "asset_type": "power_bus",
+        "voltage_v": 380
+      },
+      "material": {
+        "roughness": 0.14,
+        "metallic": 0.94
+      }
+    },
+    {
+      "id": "cooling_pipe_1",
+      "primitive": "cylinder",
+      "radius": 0.08,
+      "depth": 5.4,
+      "position": [
+        -4.55,
+        0,
+        2.75
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "color": [
+        0.05,
+        0.45,
+        0.9,
+        1
+      ],
+      "metadata": {
+        "asset_type": "cooling_pipe",
+        "status": "normal"
+      },
+      "material": {
+        "roughness": 0.14,
+        "metallic": 0.94
+      }
+    },
+    {
+      "id": "cooling_pipe_2",
+      "primitive": "cylinder",
+      "radius": 0.08,
+      "depth": 5.4,
+      "position": [
+        4.55,
+        0,
+        2.75
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "color": [
+        0.05,
+        0.45,
+        0.9,
+        1
+      ],
+      "metadata": {
+        "asset_type": "cooling_pipe",
+        "status": "normal"
+      },
+      "material": {
+        "roughness": 0.14,
+        "metallic": 0.94
+      }
+    },
+    {
+      "id": "camera_1",
+      "primitive": "cylinder",
+      "radius": 0.13,
+      "depth": 0.28,
+      "position": [
+        -3.8,
+        3.18,
+        2.75
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "color": [
+        0.08,
+        0.09,
+        0.1,
+        1
+      ],
+      "metadata": {
+        "asset_id": "CAM-01",
+        "asset_type": "camera",
+        "status": "online"
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "camera_2",
+      "primitive": "cylinder",
+      "radius": 0.13,
+      "depth": 0.28,
+      "position": [
+        3.8,
+        3.18,
+        2.75
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "color": [
+        0.08,
+        0.09,
+        0.1,
+        1
+      ],
+      "metadata": {
+        "asset_id": "CAM-02",
+        "asset_type": "camera",
+        "status": "online"
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "fire_extinguisher",
+      "primitive": "cylinder",
+      "radius": 0.14,
+      "depth": 0.62,
+      "position": [
+        -4.55,
+        -2.8,
+        0.31
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        0.9,
+        0.025,
+        0.015,
+        1
+      ],
+      "metadata": {
+        "asset_id": "FIRE-01",
+        "asset_type": "fire_extinguisher"
+      },
+      "material": {
+        "roughness": 0.24,
+        "metallic": 0.65
+      }
+    },
+    {
+      "id": "control_console",
+      "primitive": "box",
+      "dimensions": [
+        1.3,
+        0.62,
+        0.82
+      ],
+      "position": [
+        4.0,
+        -2.75,
+        0.41
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ],
+      "metadata": {
+        "asset_id": "CONSOLE-01",
+        "asset_type": "control_console",
+        "status": "online"
+      },
+      "material": {
+        "roughness": 0.55,
+        "metallic": 0.0
+      }
+    },
+    {
+      "id": "console_screen",
+      "primitive": "box",
+      "dimensions": [
+        0.75,
+        0.08,
+        0.46
+      ],
+      "position": [
+        4.0,
+        -2.42,
+        1.02
+      ],
+      "color": [
+        0.02,
+        0.5,
+        0.82,
+        1
+      ],
+      "metadata": {
+        "asset_type": "display",
+        "parent_asset": "CONSOLE-01"
+      },
+      "material": {
+        "roughness": 0.15,
+        "metallic": 0.0,
+        "emission_color": [
+          0.02,
+          0.5,
+          0.82,
+          1
+        ],
+        "emission_strength": 3.0
+      }
+    }
+  ]
+}

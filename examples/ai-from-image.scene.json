@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1",
+  "name": "AI image-derived server room reconstruction",
+  "units": "meters",
+  "source": {
+    "type": "single_image",
+    "image": "codex-clipboard-20c4d229-d3b9-449f-8283-1fca4ed853cb.png",
+    "scale": "estimated",
+    "known_measurement": null,
+    "limitations": ["single view", "occluded rear geometry", "unknown camera intrinsics"]
+  },
+  "objects": [
+    {"id":"observed_floor","primitive":"box","dimensions":[9,7,0.12],"position":[0,0,-0.06],"color":[0.28,0.31,0.36,1],"material":{"roughness":0.82,"metallic":0.08,"bevel_width":0.01},"metadata":{"source":"observed","confidence":0.98,"asset_type":"floor"}},
+    {"id":"inferred_back_wall","primitive":"box","dimensions":[9,0.12,3.3],"position":[0,3.5,1.65],"color":[0.72,0.73,0.74,1],"material":{"roughness":0.9,"metallic":0},"metadata":{"source":"observed","confidence":0.94,"asset_type":"wall"}},
+    {"id":"inferred_left_wall","primitive":"box","dimensions":[0.12,7,3.3],"position":[-4.5,0,1.65],"color":[0.62,0.64,0.67,1],"material":{"roughness":0.9,"metallic":0},"metadata":{"source":"observed","confidence":0.9,"asset_type":"wall"}},
+    {"id":"inferred_right_wall","primitive":"box","dimensions":[0.12,7,3.3],"position":[4.5,0,1.65],"color":[0.62,0.64,0.67,1],"material":{"roughness":0.9,"metallic":0},"metadata":{"source":"inferred","confidence":0.72,"asset_type":"wall"}},
+
+    {"id":"rack_front_1","primitive":"box","dimensions":[0.85,1.0,2.2],"position":[-3,-1.35,1.1],"color":[0.055,0.075,0.12,1],"material":{"roughness":0.24,"metallic":0.82,"bevel_width":0.03},"metadata":{"source":"observed","confidence":0.96,"asset_type":"rack","estimated":true}},
+    {"id":"rack_front_2","primitive":"box","dimensions":[0.85,1.0,2.2],"position":[-1,-1.35,1.1],"color":[0.055,0.075,0.12,1],"material":{"roughness":0.24,"metallic":0.82,"bevel_width":0.03},"metadata":{"source":"observed","confidence":0.97,"asset_type":"rack","estimated":true}},
+    {"id":"rack_front_3","primitive":"box","dimensions":[0.85,1.0,2.2],"position":[1,-1.35,1.1],"color":[0.055,0.075,0.12,1],"material":{"roughness":0.24,"metallic":0.82,"bevel_width":0.03},"metadata":{"source":"observed","confidence":0.97,"asset_type":"rack","estimated":true}},
+    {"id":"rack_front_4","primitive":"box","dimensions":[0.85,1.0,2.2],"position":[3,-1.35,1.1],"color":[0.055,0.075,0.12,1],"material":{"roughness":0.24,"metallic":0.82,"bevel_width":0.03},"metadata":{"source":"observed","confidence":0.96,"asset_type":"rack","estimated":true}},
+    {"id":"rack_back_1","primitive":"box","dimensions":[0.85,1.0,2.2],"position":[-3,1.35,1.1],"color":[0.055,0.075,0.12,1],"material":{"roughness":0.24,"metallic":0.82,"bevel_width":0.03},"metadata":{"source":"observed","confidence":0.84,"asset_type":"rack","partially_occluded":true}},
+    {"id":"rack_back_2","primitive":"box","dimensions":[0.85,1.0,2.2],"position":[-1,1.35,1.1],"color":[0.055,0.075,0.12,1],"material":{"roughness":0.24,"metallic":0.82,"bevel_width":0.03},"metadata":{"source":"observed","confidence":0.88,"asset_type":"rack","partially_occluded":true}},
+    {"id":"rack_back_3","primitive":"box","dimensions":[0.85,1.0,2.2],"position":[1,1.35,1.1],"color":[0.055,0.075,0.12,1],"material":{"roughness":0.24,"metallic":0.82,"bevel_width":0.03},"metadata":{"source":"observed","confidence":0.88,"asset_type":"rack","partially_occluded":true}},
+    {"id":"rack_back_4","primitive":"box","dimensions":[0.85,1.0,2.2],"position":[3,1.35,1.1],"color":[0.055,0.075,0.12,1],"material":{"roughness":0.24,"metallic":0.82,"bevel_width":0.03},"metadata":{"source":"observed","confidence":0.84,"asset_type":"rack","partially_occluded":true}},
+
+    {"id":"cooling_left","primitive":"box","dimensions":[0.95,0.8,2.3],"position":[-3.9,2.7,1.15],"color":[0.72,0.77,0.82,1],"material":{"roughness":0.38,"metallic":0.45,"bevel_width":0.025},"metadata":{"source":"observed","confidence":0.72,"asset_type":"cooling_unit"}},
+    {"id":"cooling_right","primitive":"box","dimensions":[0.95,0.8,2.3],"position":[3.9,2.7,1.15],"color":[0.72,0.77,0.82,1],"material":{"roughness":0.38,"metallic":0.45,"bevel_width":0.025},"metadata":{"source":"observed","confidence":0.78,"asset_type":"cooling_unit"}},
+    {"id":"rear_door","primitive":"box","dimensions":[1.4,0.1,2.35],"position":[0,3.35,1.175],"color":[0.3,0.36,0.42,1],"material":{"roughness":0.42,"metallic":0.55,"bevel_width":0.02},"metadata":{"source":"observed","confidence":0.86,"asset_type":"door"}},
+    {"id":"cold_aisle","primitive":"box","dimensions":[7.2,1.05,0.025],"position":[0,0,0.02],"color":[0.02,0.35,0.72,1],"material":{"roughness":0.4,"metallic":0.1},"metadata":{"source":"inferred","confidence":0.68,"asset_type":"cold_aisle"}},
+
+    {"id":"tray_left","primitive":"box","dimensions":[0.32,5.2,0.16],"position":[-2,0,2.85],"color":[0.38,0.4,0.43,1],"material":{"roughness":0.22,"metallic":0.82,"bevel_width":0.018},"metadata":{"source":"observed","confidence":0.91,"asset_type":"cable_tray"}},
+    {"id":"tray_right","primitive":"box","dimensions":[0.32,5.2,0.16],"position":[2,0,2.85],"color":[0.38,0.4,0.43,1],"material":{"roughness":0.22,"metallic":0.82,"bevel_width":0.018},"metadata":{"source":"observed","confidence":0.91,"asset_type":"cable_tray"}},
+    {"id":"power_line_1","primitive":"cylinder","radius":0.045,"depth":5.2,"position":[-3,0,3.0],"rotation_deg":[90,0,0],"color":[0.8,0.18,0.03,1],"material":{"roughness":0.12,"metallic":0.92},"metadata":{"source":"observed","confidence":0.91,"asset_type":"power_line"}},
+    {"id":"power_line_2","primitive":"cylinder","radius":0.045,"depth":5.2,"position":[-1,0,3.0],"rotation_deg":[90,0,0],"color":[0.8,0.18,0.03,1],"material":{"roughness":0.12,"metallic":0.92},"metadata":{"source":"observed","confidence":0.88,"asset_type":"power_line"}},
+    {"id":"power_line_3","primitive":"cylinder","radius":0.045,"depth":5.2,"position":[1,0,3.0],"rotation_deg":[90,0,0],"color":[0.8,0.18,0.03,1],"material":{"roughness":0.12,"metallic":0.92},"metadata":{"source":"observed","confidence":0.88,"asset_type":"power_line"}},
+    {"id":"power_line_4","primitive":"cylinder","radius":0.045,"depth":5.2,"position":[3,0,3.0],"rotation_deg":[90,0,0],"color":[0.8,0.18,0.03,1],"material":{"roughness":0.12,"metallic":0.92},"metadata":{"source":"observed","confidence":0.91,"asset_type":"power_line"}},
+    {"id":"cooling_pipe_left","primitive":"cylinder","radius":0.08,"depth":5.4,"position":[-4.15,0,2.75],"rotation_deg":[90,0,0],"color":[0.02,0.38,0.85,1],"material":{"roughness":0.14,"metallic":0.9},"metadata":{"source":"observed","confidence":0.82,"asset_type":"cooling_pipe"}},
+    {"id":"cooling_pipe_right","primitive":"cylinder","radius":0.08,"depth":5.4,"position":[4.15,0,2.75],"rotation_deg":[90,0,0],"color":[0.02,0.38,0.85,1],"material":{"roughness":0.14,"metallic":0.9},"metadata":{"source":"observed","confidence":0.76,"asset_type":"cooling_pipe"}},
+
+    {"id":"light_1","primitive":"box","dimensions":[3.2,0.14,0.06],"position":[0,-2.2,3.02],"color":[1,0.9,0.58,1],"material":{"roughness":0.15,"metallic":0,"emission_color":[1,0.9,0.58,1],"emission_strength":3},"metadata":{"source":"observed","confidence":0.9,"asset_type":"light"}},
+    {"id":"light_2","primitive":"box","dimensions":[3.2,0.14,0.06],"position":[0,-0.7,3.02],"color":[1,0.9,0.58,1],"material":{"roughness":0.15,"metallic":0,"emission_color":[1,0.9,0.58,1],"emission_strength":3},"metadata":{"source":"observed","confidence":0.94,"asset_type":"light"}},
+    {"id":"light_3","primitive":"box","dimensions":[3.2,0.14,0.06],"position":[0,0.8,3.02],"color":[1,0.9,0.58,1],"material":{"roughness":0.15,"metallic":0,"emission_color":[1,0.9,0.58,1],"emission_strength":3},"metadata":{"source":"observed","confidence":0.94,"asset_type":"light"}},
+    {"id":"light_4","primitive":"box","dimensions":[3.2,0.14,0.06],"position":[0,2.3,3.02],"color":[1,0.9,0.58,1],"material":{"roughness":0.15,"metallic":0,"emission_color":[1,0.9,0.58,1],"emission_strength":3},"metadata":{"source":"observed","confidence":0.88,"asset_type":"light"}},
+    {"id":"fire_extinguisher","primitive":"cylinder","radius":0.15,"depth":0.62,"position":[-4,-2.8,0.31],"color":[0.9,0.02,0.01,1],"material":{"roughness":0.22,"metallic":0.7},"metadata":{"source":"observed","confidence":0.93,"asset_type":"fire_extinguisher"}},
+
+    {"id":"status_front_1","primitive":"sphere","radius":0.065,"position":[-3,-0.80,1.75],"color":[0.08,1,0.2,1],"material":{"roughness":0.15,"metallic":0,"emission_color":[0.08,1,0.2,1],"emission_strength":5},"metadata":{"source":"observed","confidence":0.84,"asset_type":"status_light"}},
+    {"id":"status_front_2","primitive":"sphere","radius":0.065,"position":[-1,-0.80,1.75],"color":[0.08,1,0.2,1],"material":{"roughness":0.15,"metallic":0,"emission_color":[0.08,1,0.2,1],"emission_strength":5},"metadata":{"source":"observed","confidence":0.9,"asset_type":"status_light"}},
+    {"id":"status_front_3","primitive":"sphere","radius":0.065,"position":[1,-0.80,1.75],"color":[0.08,1,0.2,1],"material":{"roughness":0.15,"metallic":0,"emission_color":[0.08,1,0.2,1],"emission_strength":5},"metadata":{"source":"observed","confidence":0.9,"asset_type":"status_light"}},
+    {"id":"status_front_4","primitive":"sphere","radius":0.065,"position":[3,-0.80,1.75],"color":[0.08,1,0.2,1],"material":{"roughness":0.15,"metallic":0,"emission_color":[0.08,1,0.2,1],"emission_strength":5},"metadata":{"source":"observed","confidence":0.86,"asset_type":"status_light"}}
+  ]
+}

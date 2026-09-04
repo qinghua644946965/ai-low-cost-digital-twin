@@ -1,0 +1,15 @@
+{
+  "schema_version": "0.1", "name": "Minimal desktop", "units": "meters",
+  "objects": [
+    {"id":"floor","primitive":"box","dimensions":[5,4,0.1],"position":[0,0,-0.05],"color":[0.18,0.2,0.23,1]},
+    {"id":"desktop","primitive":"box","dimensions":[1.6,0.8,0.08],"position":[0,0,0.76],"color":[0.48,0.24,0.1,1]},
+    {"id":"leg_fl","primitive":"box","dimensions":[0.08,0.08,0.72],"position":[-0.7,-0.3,0.36],"color":[0.1,0.1,0.12,1]},
+    {"id":"leg_fr","primitive":"box","dimensions":[0.08,0.08,0.72],"position":[0.7,-0.3,0.36],"color":[0.1,0.1,0.12,1]},
+    {"id":"leg_bl","primitive":"box","dimensions":[0.08,0.08,0.72],"position":[-0.7,0.3,0.36],"color":[0.1,0.1,0.12,1]},
+    {"id":"leg_br","primitive":"box","dimensions":[0.08,0.08,0.72],"position":[0.7,0.3,0.36],"color":[0.1,0.1,0.12,1]},
+    {"id":"monitor","primitive":"box","dimensions":[0.62,0.08,0.38],"position":[0,0.12,1.18],"color":[0.03,0.04,0.05,1]},
+    {"id":"monitor_stand","primitive":"cylinder","radius":0.08,"depth":0.34,"position":[0,0.12,0.97],"color":[0.08,0.09,0.1,1]},
+    {"id":"cup","primitive":"cylinder","radius":0.07,"depth":0.16,"position":[0.55,-0.12,0.88],"color":[0.85,0.85,0.82,1]},
+    {"id":"desk_ball","primitive":"sphere","radius":0.09,"position":[-0.52,-0.12,0.89],"color":[0.12,0.42,0.9,1]}
+  ]
+}

@@ -1,0 +1,3919 @@
+{
+  "scene_id": "server-room-l4",
+  "scene_name": "Server room complexity level 4 - detailed racks",
+  "generated_by": "ai-low-cost-digital-twin-mvp",
+  "assets": [
+    {
+      "object_id": "floor",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "back_wall",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "left_wall",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "right_wall",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "cold_aisle",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "hot_aisle_back",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "hot_aisle_front",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "rack_a1",
+      "asset_id": "RACK_A1",
+      "asset_type": "rack",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "RACK_A1",
+        "asset_type": "rack",
+        "zone": "server-room"
+      }
+    },
+    {
+      "object_id": "rack_a1_door",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "server_a1_u1",
+      "asset_id": "SERVER_A1_U1",
+      "asset_type": "server",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A1_U1",
+        "asset_type": "server",
+        "rack_id": "rack_a1",
+        "rack_unit": "u1",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_a1_u2",
+      "asset_id": "SERVER_A1_U2",
+      "asset_type": "server",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A1_U2",
+        "asset_type": "server",
+        "rack_id": "rack_a1",
+        "rack_unit": "u2",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_a1_u3",
+      "asset_id": "SERVER_A1_U3",
+      "asset_type": "server",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A1_U3",
+        "asset_type": "server",
+        "rack_id": "rack_a1",
+        "rack_unit": "u3",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_a1_u4",
+      "asset_id": "SERVER_A1_U4",
+      "asset_type": "server",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A1_U4",
+        "asset_type": "server",
+        "rack_id": "rack_a1",
+        "rack_unit": "u4",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "status_a1",
+      "asset_id": null,
+      "asset_type": "status_beacon",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_type": "status_beacon",
+        "rack_id": "rack_a1"
+      }
+    },
+    {
+      "object_id": "rack_a2",
+      "asset_id": "RACK_A2",
+      "asset_type": "rack",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "RACK_A2",
+        "asset_type": "rack",
+        "zone": "server-room"
+      }
+    },
+    {
+      "object_id": "rack_a2_door",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "server_a2_u1",
+      "asset_id": "SERVER_A2_U1",
+      "asset_type": "server",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A2_U1",
+        "asset_type": "server",
+        "rack_id": "rack_a2",
+        "rack_unit": "u1",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_a2_u2",
+      "asset_id": "SERVER_A2_U2",
+      "asset_type": "server",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A2_U2",
+        "asset_type": "server",
+        "rack_id": "rack_a2",
+        "rack_unit": "u2",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_a2_u3",
+      "asset_id": "SERVER_A2_U3",
+      "asset_type": "server",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A2_U3",
+        "asset_type": "server",
+        "rack_id": "rack_a2",
+        "rack_unit": "u3",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_a2_u4",
+      "asset_id": "SERVER_A2_U4",
+      "asset_type": "server",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A2_U4",
+        "asset_type": "server",
+        "rack_id": "rack_a2",
+        "rack_unit": "u4",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "status_a2",
+      "asset_id": null,
+      "asset_type": "status_beacon",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_type": "status_beacon",
+        "rack_id": "rack_a2"
+      }
+    },
+    {
+      "object_id": "rack_a3",
+      "asset_id": "RACK_A3",
+      "asset_type": "rack",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "RACK_A3",
+        "asset_type": "rack",
+        "zone": "server-room"
+      }
+    },
+    {
+      "object_id": "rack_a3_door",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "server_a3_u1",
+      "asset_id": "SERVER_A3_U1",
+      "asset_type": "server",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A3_U1",
+        "asset_type": "server",
+        "rack_id": "rack_a3",
+        "rack_unit": "u1",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_a3_u2",
+      "asset_id": "SERVER_A3_U2",
+      "asset_type": "server",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A3_U2",
+        "asset_type": "server",
+        "rack_id": "rack_a3",
+        "rack_unit": "u2",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_a3_u3",
+      "asset_id": "SERVER_A3_U3",
+      "asset_type": "server",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A3_U3",
+        "asset_type": "server",
+        "rack_id": "rack_a3",
+        "rack_unit": "u3",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_a3_u4",
+      "asset_id": "SERVER_A3_U4",
+      "asset_type": "server",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A3_U4",
+        "asset_type": "server",
+        "rack_id": "rack_a3",
+        "rack_unit": "u4",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "status_a3",
+      "asset_id": null,
+      "asset_type": "status_beacon",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_type": "status_beacon",
+        "rack_id": "rack_a3"
+      }
+    },
+    {
+      "object_id": "rack_a4",
+      "asset_id": "RACK_A4",
+      "asset_type": "rack",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "RACK_A4",
+        "asset_type": "rack",
+        "zone": "server-room"
+      }
+    },
+    {
+      "object_id": "rack_a4_door",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "server_a4_u1",
+      "asset_id": "SERVER_A4_U1",
+      "asset_type": "server",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A4_U1",
+        "asset_type": "server",
+        "rack_id": "rack_a4",
+        "rack_unit": "u1",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_a4_u2",
+      "asset_id": "SERVER_A4_U2",
+      "asset_type": "server",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A4_U2",
+        "asset_type": "server",
+        "rack_id": "rack_a4",
+        "rack_unit": "u2",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_a4_u3",
+      "asset_id": "SERVER_A4_U3",
+      "asset_type": "server",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A4_U3",
+        "asset_type": "server",
+        "rack_id": "rack_a4",
+        "rack_unit": "u3",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_a4_u4",
+      "asset_id": "SERVER_A4_U4",
+      "asset_type": "server",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_A4_U4",
+        "asset_type": "server",
+        "rack_id": "rack_a4",
+        "rack_unit": "u4",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "status_a4",
+      "asset_id": null,
+      "asset_type": "status_beacon",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_type": "status_beacon",
+        "rack_id": "rack_a4"
+      }
+    },
+    {
+      "object_id": "rack_b1",
+      "asset_id": "RACK_B1",
+      "asset_type": "rack",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "RACK_B1",
+        "asset_type": "rack",
+        "zone": "server-room"
+      }
+    },
+    {
+      "object_id": "rack_b1_door",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "server_b1_u1",
+      "asset_id": "SERVER_B1_U1",
+      "asset_type": "server",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B1_U1",
+        "asset_type": "server",
+        "rack_id": "rack_b1",
+        "rack_unit": "u1",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_b1_u2",
+      "asset_id": "SERVER_B1_U2",
+      "asset_type": "server",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B1_U2",
+        "asset_type": "server",
+        "rack_id": "rack_b1",
+        "rack_unit": "u2",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_b1_u3",
+      "asset_id": "SERVER_B1_U3",
+      "asset_type": "server",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B1_U3",
+        "asset_type": "server",
+        "rack_id": "rack_b1",
+        "rack_unit": "u3",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_b1_u4",
+      "asset_id": "SERVER_B1_U4",
+      "asset_type": "server",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B1_U4",
+        "asset_type": "server",
+        "rack_id": "rack_b1",
+        "rack_unit": "u4",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "status_b1",
+      "asset_id": null,
+      "asset_type": "status_beacon",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_type": "status_beacon",
+        "rack_id": "rack_b1"
+      }
+    },
+    {
+      "object_id": "rack_b2",
+      "asset_id": "RACK_B2",
+      "asset_type": "rack",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "RACK_B2",
+        "asset_type": "rack",
+        "zone": "server-room"
+      }
+    },
+    {
+      "object_id": "rack_b2_door",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "server_b2_u1",
+      "asset_id": "SERVER_B2_U1",
+      "asset_type": "server",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B2_U1",
+        "asset_type": "server",
+        "rack_id": "rack_b2",
+        "rack_unit": "u1",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_b2_u2",
+      "asset_id": "SERVER_B2_U2",
+      "asset_type": "server",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B2_U2",
+        "asset_type": "server",
+        "rack_id": "rack_b2",
+        "rack_unit": "u2",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_b2_u3",
+      "asset_id": "SERVER_B2_U3",
+      "asset_type": "server",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B2_U3",
+        "asset_type": "server",
+        "rack_id": "rack_b2",
+        "rack_unit": "u3",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_b2_u4",
+      "asset_id": "SERVER_B2_U4",
+      "asset_type": "server",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B2_U4",
+        "asset_type": "server",
+        "rack_id": "rack_b2",
+        "rack_unit": "u4",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "status_b2",
+      "asset_id": null,
+      "asset_type": "status_beacon",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_type": "status_beacon",
+        "rack_id": "rack_b2"
+      }
+    },
+    {
+      "object_id": "rack_b3",
+      "asset_id": "RACK_B3",
+      "asset_type": "rack",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "RACK_B3",
+        "asset_type": "rack",
+        "zone": "server-room"
+      }
+    },
+    {
+      "object_id": "rack_b3_door",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "server_b3_u1",
+      "asset_id": "SERVER_B3_U1",
+      "asset_type": "server",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B3_U1",
+        "asset_type": "server",
+        "rack_id": "rack_b3",
+        "rack_unit": "u1",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_b3_u2",
+      "asset_id": "SERVER_B3_U2",
+      "asset_type": "server",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B3_U2",
+        "asset_type": "server",
+        "rack_id": "rack_b3",
+        "rack_unit": "u2",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_b3_u3",
+      "asset_id": "SERVER_B3_U3",
+      "asset_type": "server",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B3_U3",
+        "asset_type": "server",
+        "rack_id": "rack_b3",
+        "rack_unit": "u3",
+        "status": "alarm",
+        "temperature_c": 46.8
+      }
+    },
+    {
+      "object_id": "server_b3_u4",
+      "asset_id": "SERVER_B3_U4",
+      "asset_type": "server",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B3_U4",
+        "asset_type": "server",
+        "rack_id": "rack_b3",
+        "rack_unit": "u4",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "status_b3",
+      "asset_id": null,
+      "asset_type": "status_beacon",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_type": "status_beacon",
+        "rack_id": "rack_b3"
+      }
+    },
+    {
+      "object_id": "rack_b4",
+      "asset_id": "RACK_B4",
+      "asset_type": "rack",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "RACK_B4",
+        "asset_type": "rack",
+        "zone": "server-room"
+      }
+    },
+    {
+      "object_id": "rack_b4_door",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "server_b4_u1",
+      "asset_id": "SERVER_B4_U1",
+      "asset_type": "server",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B4_U1",
+        "asset_type": "server",
+        "rack_id": "rack_b4",
+        "rack_unit": "u1",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_b4_u2",
+      "asset_id": "SERVER_B4_U2",
+      "asset_type": "server",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B4_U2",
+        "asset_type": "server",
+        "rack_id": "rack_b4",
+        "rack_unit": "u2",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_b4_u3",
+      "asset_id": "SERVER_B4_U3",
+      "asset_type": "server",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B4_U3",
+        "asset_type": "server",
+        "rack_id": "rack_b4",
+        "rack_unit": "u3",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "server_b4_u4",
+      "asset_id": "SERVER_B4_U4",
+      "asset_type": "server",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "SERVER_B4_U4",
+        "asset_type": "server",
+        "rack_id": "rack_b4",
+        "rack_unit": "u4",
+        "status": "online",
+        "temperature_c": 24.6
+      }
+    },
+    {
+      "object_id": "status_b4",
+      "asset_id": null,
+      "asset_type": "status_beacon",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_type": "status_beacon",
+        "rack_id": "rack_b4"
+      }
+    },
+    {
+      "object_id": "cooling_left",
+      "asset_id": "COOLING_LEFT",
+      "asset_type": "precision_cooling",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "COOLING_LEFT",
+        "asset_type": "precision_cooling",
+        "status": "online",
+        "supply_temperature_c": 18.5
+      }
+    },
+    {
+      "object_id": "cooling_left_vent_1",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "cooling_left_vent_2",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "cooling_left_vent_3",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "cooling_right",
+      "asset_id": "COOLING_RIGHT",
+      "asset_type": "precision_cooling",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "COOLING_RIGHT",
+        "asset_type": "precision_cooling",
+        "status": "online",
+        "supply_temperature_c": 18.5
+      }
+    },
+    {
+      "object_id": "cooling_right_vent_1",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "cooling_right_vent_2",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "cooling_right_vent_3",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "door_left_frame",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "door_right_frame",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "door_top_frame",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "door",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "door_handle",
+      "asset_id": null,
+      "asset_type": "cylinder",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "cable_tray_left",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "cable_tray_right",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "ceiling_light_1",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "ceiling_light_2",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "ceiling_light_3",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "ceiling_light_4",
+      "asset_id": null,
+      "asset_type": "box",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp"
+      }
+    },
+    {
+      "object_id": "temperature_sensor_1",
+      "asset_id": "TEMPERATURE_SENSOR_1",
+      "asset_type": "temperature_sensor",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "TEMPERATURE_SENSOR_1",
+        "asset_type": "temperature_sensor",
+        "status": "online",
+        "temperature_c": 25.2
+      }
+    },
+    {
+      "object_id": "temperature_sensor_2",
+      "asset_id": "TEMPERATURE_SENSOR_2",
+      "asset_type": "temperature_sensor",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "TEMPERATURE_SENSOR_2",
+        "asset_type": "temperature_sensor",
+        "status": "online",
+        "temperature_c": 25.2
+      }
+    },
+    {
+      "object_id": "temperature_sensor_3",
+      "asset_id": "TEMPERATURE_SENSOR_3",
+      "asset_type": "temperature_sensor",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "TEMPERATURE_SENSOR_3",
+        "asset_type": "temperature_sensor",
+        "status": "online",
+        "temperature_c": 25.2
+      }
+    },
+    {
+      "object_id": "temperature_sensor_4",
+      "asset_id": "TEMPERATURE_SENSOR_4",
+      "asset_type": "temperature_sensor",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "TEMPERATURE_SENSOR_4",
+        "asset_type": "temperature_sensor",
+        "status": "online",
+        "temperature_c": 25.2
+      }
+    },
+    {
+      "object_id": "temperature_sensor_5",
+      "asset_id": "TEMPERATURE_SENSOR_5",
+      "asset_type": "temperature_sensor",
+      "parent_id": null,
+      "metadata": {
+        "source": "synthetic-mvp",
+        "asset_id": "TEMPERATURE_SENSOR_5",
+        "asset_type": "temperature_sensor",
+        "status": "online",
+        "temperature_c": 25.2
+      }
+    },
+    {
+      "object_id": "floor_tile_1_1",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 1
+      }
+    },
+    {
+      "object_id": "floor_tile_1_2",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 2
+      }
+    },
+    {
+      "object_id": "floor_tile_1_3",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 3
+      }
+    },
+    {
+      "object_id": "floor_tile_1_4",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 4
+      }
+    },
+    {
+      "object_id": "floor_tile_1_5",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 5
+      }
+    },
+    {
+      "object_id": "floor_tile_1_6",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 6
+      }
+    },
+    {
+      "object_id": "floor_tile_1_7",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 7
+      }
+    },
+    {
+      "object_id": "floor_tile_1_8",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 8
+      }
+    },
+    {
+      "object_id": "floor_tile_1_9",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 9
+      }
+    },
+    {
+      "object_id": "floor_tile_1_10",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 1,
+        "column": 10
+      }
+    },
+    {
+      "object_id": "floor_tile_2_1",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 1
+      }
+    },
+    {
+      "object_id": "floor_tile_2_2",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 2
+      }
+    },
+    {
+      "object_id": "floor_tile_2_3",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 3
+      }
+    },
+    {
+      "object_id": "floor_tile_2_4",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 4
+      }
+    },
+    {
+      "object_id": "floor_tile_2_5",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 5
+      }
+    },
+    {
+      "object_id": "floor_tile_2_6",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 6
+      }
+    },
+    {
+      "object_id": "floor_tile_2_7",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 7
+      }
+    },
+    {
+      "object_id": "floor_tile_2_8",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 8
+      }
+    },
+    {
+      "object_id": "floor_tile_2_9",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 9
+      }
+    },
+    {
+      "object_id": "floor_tile_2_10",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 2,
+        "column": 10
+      }
+    },
+    {
+      "object_id": "floor_tile_3_1",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 1
+      }
+    },
+    {
+      "object_id": "floor_tile_3_2",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 2
+      }
+    },
+    {
+      "object_id": "floor_tile_3_3",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 3
+      }
+    },
+    {
+      "object_id": "floor_tile_3_4",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 4
+      }
+    },
+    {
+      "object_id": "floor_tile_3_5",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 5
+      }
+    },
+    {
+      "object_id": "floor_tile_3_6",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 6
+      }
+    },
+    {
+      "object_id": "floor_tile_3_7",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 7
+      }
+    },
+    {
+      "object_id": "floor_tile_3_8",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 8
+      }
+    },
+    {
+      "object_id": "floor_tile_3_9",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 9
+      }
+    },
+    {
+      "object_id": "floor_tile_3_10",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 3,
+        "column": 10
+      }
+    },
+    {
+      "object_id": "floor_tile_4_1",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 1
+      }
+    },
+    {
+      "object_id": "floor_tile_4_2",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 2
+      }
+    },
+    {
+      "object_id": "floor_tile_4_3",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 3
+      }
+    },
+    {
+      "object_id": "floor_tile_4_4",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 4
+      }
+    },
+    {
+      "object_id": "floor_tile_4_5",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 5
+      }
+    },
+    {
+      "object_id": "floor_tile_4_6",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 6
+      }
+    },
+    {
+      "object_id": "floor_tile_4_7",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 7
+      }
+    },
+    {
+      "object_id": "floor_tile_4_8",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 8
+      }
+    },
+    {
+      "object_id": "floor_tile_4_9",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 9
+      }
+    },
+    {
+      "object_id": "floor_tile_4_10",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 4,
+        "column": 10
+      }
+    },
+    {
+      "object_id": "floor_tile_5_1",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 1
+      }
+    },
+    {
+      "object_id": "floor_tile_5_2",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 2
+      }
+    },
+    {
+      "object_id": "floor_tile_5_3",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 3
+      }
+    },
+    {
+      "object_id": "floor_tile_5_4",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 4
+      }
+    },
+    {
+      "object_id": "floor_tile_5_5",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 5
+      }
+    },
+    {
+      "object_id": "floor_tile_5_6",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 6
+      }
+    },
+    {
+      "object_id": "floor_tile_5_7",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 7
+      }
+    },
+    {
+      "object_id": "floor_tile_5_8",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 8
+      }
+    },
+    {
+      "object_id": "floor_tile_5_9",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 9
+      }
+    },
+    {
+      "object_id": "floor_tile_5_10",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 5,
+        "column": 10
+      }
+    },
+    {
+      "object_id": "floor_tile_6_1",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 1
+      }
+    },
+    {
+      "object_id": "floor_tile_6_2",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 2
+      }
+    },
+    {
+      "object_id": "floor_tile_6_3",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 3
+      }
+    },
+    {
+      "object_id": "floor_tile_6_4",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 4
+      }
+    },
+    {
+      "object_id": "floor_tile_6_5",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 5
+      }
+    },
+    {
+      "object_id": "floor_tile_6_6",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 6
+      }
+    },
+    {
+      "object_id": "floor_tile_6_7",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 7
+      }
+    },
+    {
+      "object_id": "floor_tile_6_8",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 8
+      }
+    },
+    {
+      "object_id": "floor_tile_6_9",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 9
+      }
+    },
+    {
+      "object_id": "floor_tile_6_10",
+      "asset_id": null,
+      "asset_type": "raised_floor_tile",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "raised_floor_tile",
+        "row": 6,
+        "column": 10
+      }
+    },
+    {
+      "object_id": "power_bus_1",
+      "asset_id": null,
+      "asset_type": "power_bus",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "power_bus",
+        "voltage_v": 380
+      }
+    },
+    {
+      "object_id": "power_bus_2",
+      "asset_id": null,
+      "asset_type": "power_bus",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "power_bus",
+        "voltage_v": 380
+      }
+    },
+    {
+      "object_id": "power_bus_3",
+      "asset_id": null,
+      "asset_type": "power_bus",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "power_bus",
+        "voltage_v": 380
+      }
+    },
+    {
+      "object_id": "power_bus_4",
+      "asset_id": null,
+      "asset_type": "power_bus",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "power_bus",
+        "voltage_v": 380
+      }
+    },
+    {
+      "object_id": "cooling_pipe_1",
+      "asset_id": null,
+      "asset_type": "cooling_pipe",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "cooling_pipe",
+        "status": "normal"
+      }
+    },
+    {
+      "object_id": "cooling_pipe_2",
+      "asset_id": null,
+      "asset_type": "cooling_pipe",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "cooling_pipe",
+        "status": "normal"
+      }
+    },
+    {
+      "object_id": "camera_1",
+      "asset_id": "CAM-01",
+      "asset_type": "camera",
+      "parent_id": null,
+      "metadata": {
+        "asset_id": "CAM-01",
+        "asset_type": "camera",
+        "status": "online"
+      }
+    },
+    {
+      "object_id": "camera_2",
+      "asset_id": "CAM-02",
+      "asset_type": "camera",
+      "parent_id": null,
+      "metadata": {
+        "asset_id": "CAM-02",
+        "asset_type": "camera",
+        "status": "online"
+      }
+    },
+    {
+      "object_id": "fire_extinguisher",
+      "asset_id": "FIRE-01",
+      "asset_type": "fire_extinguisher",
+      "parent_id": null,
+      "metadata": {
+        "asset_id": "FIRE-01",
+        "asset_type": "fire_extinguisher"
+      }
+    },
+    {
+      "object_id": "control_console",
+      "asset_id": "CONSOLE-01",
+      "asset_type": "control_console",
+      "parent_id": null,
+      "metadata": {
+        "asset_id": "CONSOLE-01",
+        "asset_type": "control_console",
+        "status": "online"
+      }
+    },
+    {
+      "object_id": "console_screen",
+      "asset_id": null,
+      "asset_type": "display",
+      "parent_id": null,
+      "metadata": {
+        "asset_type": "display",
+        "parent_asset": "CONSOLE-01"
+      }
+    },
+    {
+      "object_id": "rack_a1_front_frame_left",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_a1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a1_front_frame_right",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_a1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a1_front_panel",
+      "asset_id": null,
+      "asset_type": "rack_door_panel",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "rack_door_panel",
+        "rack_id": "rack_a1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a1_front_vent_1",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a1_front_vent_2",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a1_front_vent_3",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a1_front_vent_4",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a1_front_vent_5",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a1_front_vent_6",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a1_front_vent_7",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a1_front_handle",
+      "asset_id": null,
+      "asset_type": "rack_handle",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "rack_handle",
+        "rack_id": "rack_a1"
+      }
+    },
+    {
+      "object_id": "rack_a1_front_id_strip",
+      "asset_id": null,
+      "asset_type": "rack_identifier",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "rack_identifier",
+        "rack_id": "rack_a1",
+        "label": "RACK_A1"
+      }
+    },
+    {
+      "object_id": "rack_a1_rear_frame_left",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_a1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a1_rear_frame_right",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_a1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a1_rear_panel",
+      "asset_id": null,
+      "asset_type": "rack_door_panel",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "rack_door_panel",
+        "rack_id": "rack_a1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a1_rear_vent_1",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a1_rear_vent_2",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a1_rear_vent_3",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a1_rear_vent_4",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a1_rear_vent_5",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a1_rear_vent_6",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a1_rear_vent_7",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a1_rear_handle",
+      "asset_id": null,
+      "asset_type": "rack_handle",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "rack_handle",
+        "rack_id": "rack_a1"
+      }
+    },
+    {
+      "object_id": "rack_a1_rear_id_strip",
+      "asset_id": null,
+      "asset_type": "rack_identifier",
+      "parent_id": "rack_a1",
+      "metadata": {
+        "asset_type": "rack_identifier",
+        "rack_id": "rack_a1",
+        "label": "RACK_A1"
+      }
+    },
+    {
+      "object_id": "rack_a2_front_frame_left",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_a2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a2_front_frame_right",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_a2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a2_front_panel",
+      "asset_id": null,
+      "asset_type": "rack_door_panel",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "rack_door_panel",
+        "rack_id": "rack_a2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a2_front_vent_1",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a2_front_vent_2",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a2_front_vent_3",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a2_front_vent_4",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a2_front_vent_5",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a2_front_vent_6",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a2_front_vent_7",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a2_front_handle",
+      "asset_id": null,
+      "asset_type": "rack_handle",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "rack_handle",
+        "rack_id": "rack_a2"
+      }
+    },
+    {
+      "object_id": "rack_a2_front_id_strip",
+      "asset_id": null,
+      "asset_type": "rack_identifier",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "rack_identifier",
+        "rack_id": "rack_a2",
+        "label": "RACK_A2"
+      }
+    },
+    {
+      "object_id": "rack_a2_rear_frame_left",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_a2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a2_rear_frame_right",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_a2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a2_rear_panel",
+      "asset_id": null,
+      "asset_type": "rack_door_panel",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "rack_door_panel",
+        "rack_id": "rack_a2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a2_rear_vent_1",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a2_rear_vent_2",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a2_rear_vent_3",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a2_rear_vent_4",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a2_rear_vent_5",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a2_rear_vent_6",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a2_rear_vent_7",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a2_rear_handle",
+      "asset_id": null,
+      "asset_type": "rack_handle",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "rack_handle",
+        "rack_id": "rack_a2"
+      }
+    },
+    {
+      "object_id": "rack_a2_rear_id_strip",
+      "asset_id": null,
+      "asset_type": "rack_identifier",
+      "parent_id": "rack_a2",
+      "metadata": {
+        "asset_type": "rack_identifier",
+        "rack_id": "rack_a2",
+        "label": "RACK_A2"
+      }
+    },
+    {
+      "object_id": "rack_a3_front_frame_left",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_a3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a3_front_frame_right",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_a3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a3_front_panel",
+      "asset_id": null,
+      "asset_type": "rack_door_panel",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "rack_door_panel",
+        "rack_id": "rack_a3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a3_front_vent_1",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a3_front_vent_2",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a3_front_vent_3",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a3_front_vent_4",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a3_front_vent_5",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a3_front_vent_6",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a3_front_vent_7",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a3_front_handle",
+      "asset_id": null,
+      "asset_type": "rack_handle",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "rack_handle",
+        "rack_id": "rack_a3"
+      }
+    },
+    {
+      "object_id": "rack_a3_front_id_strip",
+      "asset_id": null,
+      "asset_type": "rack_identifier",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "rack_identifier",
+        "rack_id": "rack_a3",
+        "label": "RACK_A3"
+      }
+    },
+    {
+      "object_id": "rack_a3_rear_frame_left",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_a3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a3_rear_frame_right",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_a3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a3_rear_panel",
+      "asset_id": null,
+      "asset_type": "rack_door_panel",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "rack_door_panel",
+        "rack_id": "rack_a3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a3_rear_vent_1",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a3_rear_vent_2",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a3_rear_vent_3",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a3_rear_vent_4",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a3_rear_vent_5",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a3_rear_vent_6",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a3_rear_vent_7",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a3_rear_handle",
+      "asset_id": null,
+      "asset_type": "rack_handle",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "rack_handle",
+        "rack_id": "rack_a3"
+      }
+    },
+    {
+      "object_id": "rack_a3_rear_id_strip",
+      "asset_id": null,
+      "asset_type": "rack_identifier",
+      "parent_id": "rack_a3",
+      "metadata": {
+        "asset_type": "rack_identifier",
+        "rack_id": "rack_a3",
+        "label": "RACK_A3"
+      }
+    },
+    {
+      "object_id": "rack_a4_front_frame_left",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_a4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a4_front_frame_right",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_a4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a4_front_panel",
+      "asset_id": null,
+      "asset_type": "rack_door_panel",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "rack_door_panel",
+        "rack_id": "rack_a4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a4_front_vent_1",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a4_front_vent_2",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a4_front_vent_3",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a4_front_vent_4",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a4_front_vent_5",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a4_front_vent_6",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a4_front_vent_7",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_a4_front_handle",
+      "asset_id": null,
+      "asset_type": "rack_handle",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "rack_handle",
+        "rack_id": "rack_a4"
+      }
+    },
+    {
+      "object_id": "rack_a4_front_id_strip",
+      "asset_id": null,
+      "asset_type": "rack_identifier",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "rack_identifier",
+        "rack_id": "rack_a4",
+        "label": "RACK_A4"
+      }
+    },
+    {
+      "object_id": "rack_a4_rear_frame_left",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_a4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a4_rear_frame_right",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_a4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a4_rear_panel",
+      "asset_id": null,
+      "asset_type": "rack_door_panel",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "rack_door_panel",
+        "rack_id": "rack_a4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a4_rear_vent_1",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a4_rear_vent_2",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a4_rear_vent_3",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a4_rear_vent_4",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a4_rear_vent_5",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a4_rear_vent_6",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a4_rear_vent_7",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_a4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_a4_rear_handle",
+      "asset_id": null,
+      "asset_type": "rack_handle",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "rack_handle",
+        "rack_id": "rack_a4"
+      }
+    },
+    {
+      "object_id": "rack_a4_rear_id_strip",
+      "asset_id": null,
+      "asset_type": "rack_identifier",
+      "parent_id": "rack_a4",
+      "metadata": {
+        "asset_type": "rack_identifier",
+        "rack_id": "rack_a4",
+        "label": "RACK_A4"
+      }
+    },
+    {
+      "object_id": "rack_b1_front_frame_left",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_b1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b1_front_frame_right",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_b1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b1_front_panel",
+      "asset_id": null,
+      "asset_type": "rack_door_panel",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "rack_door_panel",
+        "rack_id": "rack_b1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b1_front_vent_1",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b1_front_vent_2",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b1_front_vent_3",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b1_front_vent_4",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b1_front_vent_5",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b1_front_vent_6",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b1_front_vent_7",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b1",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b1_front_handle",
+      "asset_id": null,
+      "asset_type": "rack_handle",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "rack_handle",
+        "rack_id": "rack_b1"
+      }
+    },
+    {
+      "object_id": "rack_b1_front_id_strip",
+      "asset_id": null,
+      "asset_type": "rack_identifier",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "rack_identifier",
+        "rack_id": "rack_b1",
+        "label": "RACK_B1"
+      }
+    },
+    {
+      "object_id": "rack_b1_rear_frame_left",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_b1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b1_rear_frame_right",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_b1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b1_rear_panel",
+      "asset_id": null,
+      "asset_type": "rack_door_panel",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "rack_door_panel",
+        "rack_id": "rack_b1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b1_rear_vent_1",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b1_rear_vent_2",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b1_rear_vent_3",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b1_rear_vent_4",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b1_rear_vent_5",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b1_rear_vent_6",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b1_rear_vent_7",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b1",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b1_rear_handle",
+      "asset_id": null,
+      "asset_type": "rack_handle",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "rack_handle",
+        "rack_id": "rack_b1"
+      }
+    },
+    {
+      "object_id": "rack_b1_rear_id_strip",
+      "asset_id": null,
+      "asset_type": "rack_identifier",
+      "parent_id": "rack_b1",
+      "metadata": {
+        "asset_type": "rack_identifier",
+        "rack_id": "rack_b1",
+        "label": "RACK_B1"
+      }
+    },
+    {
+      "object_id": "rack_b2_front_frame_left",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_b2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b2_front_frame_right",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_b2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b2_front_panel",
+      "asset_id": null,
+      "asset_type": "rack_door_panel",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "rack_door_panel",
+        "rack_id": "rack_b2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b2_front_vent_1",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b2_front_vent_2",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b2_front_vent_3",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b2_front_vent_4",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b2_front_vent_5",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b2_front_vent_6",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b2_front_vent_7",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b2",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b2_front_handle",
+      "asset_id": null,
+      "asset_type": "rack_handle",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "rack_handle",
+        "rack_id": "rack_b2"
+      }
+    },
+    {
+      "object_id": "rack_b2_front_id_strip",
+      "asset_id": null,
+      "asset_type": "rack_identifier",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "rack_identifier",
+        "rack_id": "rack_b2",
+        "label": "RACK_B2"
+      }
+    },
+    {
+      "object_id": "rack_b2_rear_frame_left",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_b2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b2_rear_frame_right",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_b2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b2_rear_panel",
+      "asset_id": null,
+      "asset_type": "rack_door_panel",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "rack_door_panel",
+        "rack_id": "rack_b2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b2_rear_vent_1",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b2_rear_vent_2",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b2_rear_vent_3",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b2_rear_vent_4",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b2_rear_vent_5",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b2_rear_vent_6",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b2_rear_vent_7",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b2",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b2_rear_handle",
+      "asset_id": null,
+      "asset_type": "rack_handle",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "rack_handle",
+        "rack_id": "rack_b2"
+      }
+    },
+    {
+      "object_id": "rack_b2_rear_id_strip",
+      "asset_id": null,
+      "asset_type": "rack_identifier",
+      "parent_id": "rack_b2",
+      "metadata": {
+        "asset_type": "rack_identifier",
+        "rack_id": "rack_b2",
+        "label": "RACK_B2"
+      }
+    },
+    {
+      "object_id": "rack_b3_front_frame_left",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_b3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b3_front_frame_right",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_b3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b3_front_panel",
+      "asset_id": null,
+      "asset_type": "rack_door_panel",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "rack_door_panel",
+        "rack_id": "rack_b3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b3_front_vent_1",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b3_front_vent_2",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b3_front_vent_3",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b3_front_vent_4",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b3_front_vent_5",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b3_front_vent_6",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b3_front_vent_7",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b3",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b3_front_handle",
+      "asset_id": null,
+      "asset_type": "rack_handle",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "rack_handle",
+        "rack_id": "rack_b3"
+      }
+    },
+    {
+      "object_id": "rack_b3_front_id_strip",
+      "asset_id": null,
+      "asset_type": "rack_identifier",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "rack_identifier",
+        "rack_id": "rack_b3",
+        "label": "RACK_B3"
+      }
+    },
+    {
+      "object_id": "rack_b3_rear_frame_left",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_b3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b3_rear_frame_right",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_b3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b3_rear_panel",
+      "asset_id": null,
+      "asset_type": "rack_door_panel",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "rack_door_panel",
+        "rack_id": "rack_b3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b3_rear_vent_1",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b3_rear_vent_2",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b3_rear_vent_3",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b3_rear_vent_4",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b3_rear_vent_5",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b3_rear_vent_6",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b3_rear_vent_7",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b3",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b3_rear_handle",
+      "asset_id": null,
+      "asset_type": "rack_handle",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "rack_handle",
+        "rack_id": "rack_b3"
+      }
+    },
+    {
+      "object_id": "rack_b3_rear_id_strip",
+      "asset_id": null,
+      "asset_type": "rack_identifier",
+      "parent_id": "rack_b3",
+      "metadata": {
+        "asset_type": "rack_identifier",
+        "rack_id": "rack_b3",
+        "label": "RACK_B3"
+      }
+    },
+    {
+      "object_id": "rack_b4_front_frame_left",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_b4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b4_front_frame_right",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_b4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b4_front_panel",
+      "asset_id": null,
+      "asset_type": "rack_door_panel",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "rack_door_panel",
+        "rack_id": "rack_b4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b4_front_vent_1",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b4_front_vent_2",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b4_front_vent_3",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b4_front_vent_4",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b4_front_vent_5",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b4_front_vent_6",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b4_front_vent_7",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b4",
+        "face": "front"
+      }
+    },
+    {
+      "object_id": "rack_b4_front_handle",
+      "asset_id": null,
+      "asset_type": "rack_handle",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "rack_handle",
+        "rack_id": "rack_b4"
+      }
+    },
+    {
+      "object_id": "rack_b4_front_id_strip",
+      "asset_id": null,
+      "asset_type": "rack_identifier",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "rack_identifier",
+        "rack_id": "rack_b4",
+        "label": "RACK_B4"
+      }
+    },
+    {
+      "object_id": "rack_b4_rear_frame_left",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_b4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b4_rear_frame_right",
+      "asset_id": null,
+      "asset_type": "rack_door_frame",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "rack_door_frame",
+        "rack_id": "rack_b4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b4_rear_panel",
+      "asset_id": null,
+      "asset_type": "rack_door_panel",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "rack_door_panel",
+        "rack_id": "rack_b4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b4_rear_vent_1",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b4_rear_vent_2",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b4_rear_vent_3",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b4_rear_vent_4",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b4_rear_vent_5",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b4_rear_vent_6",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b4_rear_vent_7",
+      "asset_id": null,
+      "asset_type": "ventilation_slot",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "ventilation_slot",
+        "rack_id": "rack_b4",
+        "face": "rear"
+      }
+    },
+    {
+      "object_id": "rack_b4_rear_handle",
+      "asset_id": null,
+      "asset_type": "rack_handle",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "rack_handle",
+        "rack_id": "rack_b4"
+      }
+    },
+    {
+      "object_id": "rack_b4_rear_id_strip",
+      "asset_id": null,
+      "asset_type": "rack_identifier",
+      "parent_id": "rack_b4",
+      "metadata": {
+        "asset_type": "rack_identifier",
+        "rack_id": "rack_b4",
+        "label": "RACK_B4"
+      }
+    }
+  ]
+}

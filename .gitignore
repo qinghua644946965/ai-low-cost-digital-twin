@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+build/
+web/dist/
+web/node_modules/
+.vite/

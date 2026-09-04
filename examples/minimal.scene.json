@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1",
+  "name": "Minimal JSON validation",
+  "units": "meters",
+  "objects": [
+    {
+      "id": "ground",
+      "primitive": "box",
+      "dimensions": [4.0, 4.0, 0.1],
+      "position": [0.0, 0.0, -0.05],
+      "color": [0.16, 0.18, 0.22, 1.0]
+    },
+    {
+      "id": "table",
+      "primitive": "box",
+      "dimensions": [1.6, 0.8, 0.12],
+      "position": [0.0, 0.0, 0.8],
+      "color": [0.55, 0.24, 0.08, 1.0]
+    },
+    {
+      "id": "cup",
+      "primitive": "cylinder",
+      "radius": 0.12,
+      "depth": 0.3,
+      "position": [0.45, 0.0, 1.01],
+      "color": [0.92, 0.92, 0.92, 1.0]
+    },
+    {
+      "id": "blue_ball",
+      "primitive": "sphere",
+      "radius": 0.16,
+      "position": [-0.4, 0.0, 1.02],
+      "color": [0.05, 0.3, 1.0, 1.0]
+    }
+  ]
+}

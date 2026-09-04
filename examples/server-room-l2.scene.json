@@ -1,0 +1,1727 @@
+{
+  "schema_version": "0.1",
+  "name": "Server room complexity level 2",
+  "units": "meters",
+  "objects": [
+    {
+      "id": "floor",
+      "primitive": "box",
+      "dimensions": [
+        10,
+        7,
+        0.12
+      ],
+      "position": [
+        0,
+        0,
+        -0.06
+      ],
+      "color": [
+        0.1,
+        0.12,
+        0.15,
+        1
+      ]
+    },
+    {
+      "id": "back_wall",
+      "primitive": "box",
+      "dimensions": [
+        10,
+        0.12,
+        3.4
+      ],
+      "position": [
+        0,
+        3.5,
+        1.7
+      ],
+      "color": [
+        0.52,
+        0.55,
+        0.59,
+        1
+      ]
+    },
+    {
+      "id": "left_wall",
+      "primitive": "box",
+      "dimensions": [
+        0.12,
+        7,
+        3.4
+      ],
+      "position": [
+        -5,
+        0,
+        1.7
+      ],
+      "color": [
+        0.43,
+        0.46,
+        0.5,
+        1
+      ]
+    },
+    {
+      "id": "right_wall",
+      "primitive": "box",
+      "dimensions": [
+        0.12,
+        7,
+        3.4
+      ],
+      "position": [
+        5,
+        0,
+        1.7
+      ],
+      "color": [
+        0.43,
+        0.46,
+        0.5,
+        1
+      ]
+    },
+    {
+      "id": "cold_aisle",
+      "primitive": "box",
+      "dimensions": [
+        7.2,
+        1.15,
+        0.025
+      ],
+      "position": [
+        0,
+        0,
+        0.015
+      ],
+      "color": [
+        0.02,
+        0.25,
+        0.58,
+        1
+      ]
+    },
+    {
+      "id": "hot_aisle_back",
+      "primitive": "box",
+      "dimensions": [
+        7.2,
+        0.55,
+        0.025
+      ],
+      "position": [
+        0,
+        2.35,
+        0.015
+      ],
+      "color": [
+        0.55,
+        0.08,
+        0.03,
+        1
+      ]
+    },
+    {
+      "id": "hot_aisle_front",
+      "primitive": "box",
+      "dimensions": [
+        7.2,
+        0.55,
+        0.025
+      ],
+      "position": [
+        0,
+        -2.35,
+        0.015
+      ],
+      "color": [
+        0.55,
+        0.08,
+        0.03,
+        1
+      ]
+    },
+    {
+      "id": "rack_a1",
+      "primitive": "box",
+      "dimensions": [
+        0.82,
+        1.02,
+        2.25
+      ],
+      "position": [
+        -3.0,
+        1.35,
+        1.125
+      ],
+      "color": [
+        0.025,
+        0.03,
+        0.045,
+        1
+      ]
+    },
+    {
+      "id": "rack_a1_door",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        2.08
+      ],
+      "position": [
+        -3.0,
+        0.81,
+        1.125
+      ],
+      "color": [
+        0.08,
+        0.1,
+        0.13,
+        1
+      ]
+    },
+    {
+      "id": "server_a1_u1",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -3.0,
+        0.795,
+        0.48
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_a1_u2",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -3.0,
+        0.795,
+        0.82
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_a1_u3",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -3.0,
+        0.795,
+        1.16
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_a1_u4",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -3.0,
+        0.795,
+        1.5
+      ],
+      "color": [
+        0.12,
+        0.42,
+        0.75,
+        1
+      ]
+    },
+    {
+      "id": "status_a1",
+      "primitive": "sphere",
+      "radius": 0.06,
+      "position": [
+        -3.0,
+        0.755,
+        1.91
+      ],
+      "color": [
+        0.08,
+        1,
+        0.18,
+        1
+      ]
+    },
+    {
+      "id": "rack_a2",
+      "primitive": "box",
+      "dimensions": [
+        0.82,
+        1.02,
+        2.25
+      ],
+      "position": [
+        -1.0,
+        1.35,
+        1.125
+      ],
+      "color": [
+        0.025,
+        0.03,
+        0.045,
+        1
+      ]
+    },
+    {
+      "id": "rack_a2_door",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        2.08
+      ],
+      "position": [
+        -1.0,
+        0.81,
+        1.125
+      ],
+      "color": [
+        0.08,
+        0.1,
+        0.13,
+        1
+      ]
+    },
+    {
+      "id": "server_a2_u1",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -1.0,
+        0.795,
+        0.48
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_a2_u2",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -1.0,
+        0.795,
+        0.82
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_a2_u3",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -1.0,
+        0.795,
+        1.16
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_a2_u4",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -1.0,
+        0.795,
+        1.5
+      ],
+      "color": [
+        0.12,
+        0.42,
+        0.75,
+        1
+      ]
+    },
+    {
+      "id": "status_a2",
+      "primitive": "sphere",
+      "radius": 0.06,
+      "position": [
+        -1.0,
+        0.755,
+        1.91
+      ],
+      "color": [
+        0.08,
+        1,
+        0.18,
+        1
+      ]
+    },
+    {
+      "id": "rack_a3",
+      "primitive": "box",
+      "dimensions": [
+        0.82,
+        1.02,
+        2.25
+      ],
+      "position": [
+        1.0,
+        1.35,
+        1.125
+      ],
+      "color": [
+        0.025,
+        0.03,
+        0.045,
+        1
+      ]
+    },
+    {
+      "id": "rack_a3_door",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        2.08
+      ],
+      "position": [
+        1.0,
+        0.81,
+        1.125
+      ],
+      "color": [
+        0.08,
+        0.1,
+        0.13,
+        1
+      ]
+    },
+    {
+      "id": "server_a3_u1",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        1.0,
+        0.795,
+        0.48
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_a3_u2",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        1.0,
+        0.795,
+        0.82
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_a3_u3",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        1.0,
+        0.795,
+        1.16
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_a3_u4",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        1.0,
+        0.795,
+        1.5
+      ],
+      "color": [
+        0.12,
+        0.42,
+        0.75,
+        1
+      ]
+    },
+    {
+      "id": "status_a3",
+      "primitive": "sphere",
+      "radius": 0.06,
+      "position": [
+        1.0,
+        0.755,
+        1.91
+      ],
+      "color": [
+        0.08,
+        1,
+        0.18,
+        1
+      ]
+    },
+    {
+      "id": "rack_a4",
+      "primitive": "box",
+      "dimensions": [
+        0.82,
+        1.02,
+        2.25
+      ],
+      "position": [
+        3.0,
+        1.35,
+        1.125
+      ],
+      "color": [
+        0.025,
+        0.03,
+        0.045,
+        1
+      ]
+    },
+    {
+      "id": "rack_a4_door",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        2.08
+      ],
+      "position": [
+        3.0,
+        0.81,
+        1.125
+      ],
+      "color": [
+        0.08,
+        0.1,
+        0.13,
+        1
+      ]
+    },
+    {
+      "id": "server_a4_u1",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        3.0,
+        0.795,
+        0.48
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_a4_u2",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        3.0,
+        0.795,
+        0.82
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_a4_u3",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        3.0,
+        0.795,
+        1.16
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_a4_u4",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        3.0,
+        0.795,
+        1.5
+      ],
+      "color": [
+        0.12,
+        0.42,
+        0.75,
+        1
+      ]
+    },
+    {
+      "id": "status_a4",
+      "primitive": "sphere",
+      "radius": 0.06,
+      "position": [
+        3.0,
+        0.755,
+        1.91
+      ],
+      "color": [
+        0.08,
+        1,
+        0.18,
+        1
+      ]
+    },
+    {
+      "id": "rack_b1",
+      "primitive": "box",
+      "dimensions": [
+        0.82,
+        1.02,
+        2.25
+      ],
+      "position": [
+        -3.0,
+        -1.35,
+        1.125
+      ],
+      "color": [
+        0.025,
+        0.03,
+        0.045,
+        1
+      ]
+    },
+    {
+      "id": "rack_b1_door",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        2.08
+      ],
+      "position": [
+        -3.0,
+        -0.81,
+        1.125
+      ],
+      "color": [
+        0.08,
+        0.1,
+        0.13,
+        1
+      ]
+    },
+    {
+      "id": "server_b1_u1",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -3.0,
+        -0.795,
+        0.48
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_b1_u2",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -3.0,
+        -0.795,
+        0.82
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_b1_u3",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -3.0,
+        -0.795,
+        1.16
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_b1_u4",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -3.0,
+        -0.795,
+        1.5
+      ],
+      "color": [
+        0.12,
+        0.42,
+        0.75,
+        1
+      ]
+    },
+    {
+      "id": "status_b1",
+      "primitive": "sphere",
+      "radius": 0.06,
+      "position": [
+        -3.0,
+        -0.755,
+        1.91
+      ],
+      "color": [
+        0.08,
+        1,
+        0.18,
+        1
+      ]
+    },
+    {
+      "id": "rack_b2",
+      "primitive": "box",
+      "dimensions": [
+        0.82,
+        1.02,
+        2.25
+      ],
+      "position": [
+        -1.0,
+        -1.35,
+        1.125
+      ],
+      "color": [
+        0.025,
+        0.03,
+        0.045,
+        1
+      ]
+    },
+    {
+      "id": "rack_b2_door",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        2.08
+      ],
+      "position": [
+        -1.0,
+        -0.81,
+        1.125
+      ],
+      "color": [
+        0.08,
+        0.1,
+        0.13,
+        1
+      ]
+    },
+    {
+      "id": "server_b2_u1",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -1.0,
+        -0.795,
+        0.48
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_b2_u2",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -1.0,
+        -0.795,
+        0.82
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_b2_u3",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -1.0,
+        -0.795,
+        1.16
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_b2_u4",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        -1.0,
+        -0.795,
+        1.5
+      ],
+      "color": [
+        0.12,
+        0.42,
+        0.75,
+        1
+      ]
+    },
+    {
+      "id": "status_b2",
+      "primitive": "sphere",
+      "radius": 0.06,
+      "position": [
+        -1.0,
+        -0.755,
+        1.91
+      ],
+      "color": [
+        0.08,
+        1,
+        0.18,
+        1
+      ]
+    },
+    {
+      "id": "rack_b3",
+      "primitive": "box",
+      "dimensions": [
+        0.82,
+        1.02,
+        2.25
+      ],
+      "position": [
+        1.0,
+        -1.35,
+        1.125
+      ],
+      "color": [
+        0.025,
+        0.03,
+        0.045,
+        1
+      ]
+    },
+    {
+      "id": "rack_b3_door",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        2.08
+      ],
+      "position": [
+        1.0,
+        -0.81,
+        1.125
+      ],
+      "color": [
+        0.08,
+        0.1,
+        0.13,
+        1
+      ]
+    },
+    {
+      "id": "server_b3_u1",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        1.0,
+        -0.795,
+        0.48
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_b3_u2",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        1.0,
+        -0.795,
+        0.82
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_b3_u3",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        1.0,
+        -0.795,
+        1.16
+      ],
+      "color": [
+        0.78,
+        0.055,
+        0.025,
+        1
+      ]
+    },
+    {
+      "id": "server_b3_u4",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        1.0,
+        -0.795,
+        1.5
+      ],
+      "color": [
+        0.12,
+        0.42,
+        0.75,
+        1
+      ]
+    },
+    {
+      "id": "status_b3",
+      "primitive": "sphere",
+      "radius": 0.06,
+      "position": [
+        1.0,
+        -0.755,
+        1.91
+      ],
+      "color": [
+        1,
+        0.08,
+        0.025,
+        1
+      ]
+    },
+    {
+      "id": "rack_b4",
+      "primitive": "box",
+      "dimensions": [
+        0.82,
+        1.02,
+        2.25
+      ],
+      "position": [
+        3.0,
+        -1.35,
+        1.125
+      ],
+      "color": [
+        0.025,
+        0.03,
+        0.045,
+        1
+      ]
+    },
+    {
+      "id": "rack_b4_door",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        2.08
+      ],
+      "position": [
+        3.0,
+        -0.81,
+        1.125
+      ],
+      "color": [
+        0.08,
+        0.1,
+        0.13,
+        1
+      ]
+    },
+    {
+      "id": "server_b4_u1",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        3.0,
+        -0.795,
+        0.48
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_b4_u2",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        3.0,
+        -0.795,
+        0.82
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_b4_u3",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        3.0,
+        -0.795,
+        1.16
+      ],
+      "color": [
+        0.16,
+        0.2,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": "server_b4_u4",
+      "primitive": "box",
+      "dimensions": [
+        0.63,
+        0.055,
+        0.22
+      ],
+      "position": [
+        3.0,
+        -0.795,
+        1.5
+      ],
+      "color": [
+        0.12,
+        0.42,
+        0.75,
+        1
+      ]
+    },
+    {
+      "id": "status_b4",
+      "primitive": "sphere",
+      "radius": 0.06,
+      "position": [
+        3.0,
+        -0.755,
+        1.91
+      ],
+      "color": [
+        0.08,
+        1,
+        0.18,
+        1
+      ]
+    },
+    {
+      "id": "cooling_left",
+      "primitive": "box",
+      "dimensions": [
+        1.0,
+        0.8,
+        2.35
+      ],
+      "position": [
+        -4.25,
+        2.75,
+        1.175
+      ],
+      "color": [
+        0.72,
+        0.77,
+        0.82,
+        1
+      ]
+    },
+    {
+      "id": "cooling_left_vent_1",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        0.12
+      ],
+      "position": [
+        -4.25,
+        2.33,
+        1.55
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.2,
+        1
+      ]
+    },
+    {
+      "id": "cooling_left_vent_2",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        0.12
+      ],
+      "position": [
+        -4.25,
+        2.33,
+        1.78
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.2,
+        1
+      ]
+    },
+    {
+      "id": "cooling_left_vent_3",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        0.12
+      ],
+      "position": [
+        -4.25,
+        2.33,
+        2.0100000000000002
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.2,
+        1
+      ]
+    },
+    {
+      "id": "cooling_right",
+      "primitive": "box",
+      "dimensions": [
+        1.0,
+        0.8,
+        2.35
+      ],
+      "position": [
+        4.25,
+        2.75,
+        1.175
+      ],
+      "color": [
+        0.72,
+        0.77,
+        0.82,
+        1
+      ]
+    },
+    {
+      "id": "cooling_right_vent_1",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        0.12
+      ],
+      "position": [
+        4.25,
+        2.33,
+        1.55
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.2,
+        1
+      ]
+    },
+    {
+      "id": "cooling_right_vent_2",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        0.12
+      ],
+      "position": [
+        4.25,
+        2.33,
+        1.78
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.2,
+        1
+      ]
+    },
+    {
+      "id": "cooling_right_vent_3",
+      "primitive": "box",
+      "dimensions": [
+        0.72,
+        0.035,
+        0.12
+      ],
+      "position": [
+        4.25,
+        2.33,
+        2.0100000000000002
+      ],
+      "color": [
+        0.12,
+        0.16,
+        0.2,
+        1
+      ]
+    },
+    {
+      "id": "door_left_frame",
+      "primitive": "box",
+      "dimensions": [
+        0.12,
+        0.35,
+        2.5
+      ],
+      "position": [
+        -0.76,
+        3.28,
+        1.25
+      ],
+      "color": [
+        0.1,
+        0.12,
+        0.14,
+        1
+      ]
+    },
+    {
+      "id": "door_right_frame",
+      "primitive": "box",
+      "dimensions": [
+        0.12,
+        0.35,
+        2.5
+      ],
+      "position": [
+        0.76,
+        3.28,
+        1.25
+      ],
+      "color": [
+        0.1,
+        0.12,
+        0.14,
+        1
+      ]
+    },
+    {
+      "id": "door_top_frame",
+      "primitive": "box",
+      "dimensions": [
+        1.64,
+        0.35,
+        0.12
+      ],
+      "position": [
+        0,
+        3.28,
+        2.46
+      ],
+      "color": [
+        0.1,
+        0.12,
+        0.14,
+        1
+      ]
+    },
+    {
+      "id": "door",
+      "primitive": "box",
+      "dimensions": [
+        1.35,
+        0.08,
+        2.3
+      ],
+      "position": [
+        0,
+        3.2,
+        1.15
+      ],
+      "color": [
+        0.24,
+        0.3,
+        0.36,
+        1
+      ]
+    },
+    {
+      "id": "door_handle",
+      "primitive": "cylinder",
+      "radius": 0.055,
+      "depth": 0.12,
+      "position": [
+        0.48,
+        3.12,
+        1.15
+      ],
+      "color": [
+        0.9,
+        0.65,
+        0.12,
+        1
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "cable_tray_left",
+      "primitive": "box",
+      "dimensions": [
+        0.32,
+        5.3,
+        0.16
+      ],
+      "position": [
+        -2.0,
+        0,
+        2.85
+      ],
+      "color": [
+        0.34,
+        0.36,
+        0.38,
+        1
+      ]
+    },
+    {
+      "id": "cable_tray_right",
+      "primitive": "box",
+      "dimensions": [
+        0.32,
+        5.3,
+        0.16
+      ],
+      "position": [
+        2.0,
+        0,
+        2.85
+      ],
+      "color": [
+        0.34,
+        0.36,
+        0.38,
+        1
+      ]
+    },
+    {
+      "id": "ceiling_light_1",
+      "primitive": "box",
+      "dimensions": [
+        3.2,
+        0.16,
+        0.07
+      ],
+      "position": [
+        0,
+        -2.3,
+        3.05
+      ],
+      "color": [
+        1,
+        0.9,
+        0.55,
+        1
+      ]
+    },
+    {
+      "id": "ceiling_light_2",
+      "primitive": "box",
+      "dimensions": [
+        3.2,
+        0.16,
+        0.07
+      ],
+      "position": [
+        0,
+        -0.75,
+        3.05
+      ],
+      "color": [
+        1,
+        0.9,
+        0.55,
+        1
+      ]
+    },
+    {
+      "id": "ceiling_light_3",
+      "primitive": "box",
+      "dimensions": [
+        3.2,
+        0.16,
+        0.07
+      ],
+      "position": [
+        0,
+        0.75,
+        3.05
+      ],
+      "color": [
+        1,
+        0.9,
+        0.55,
+        1
+      ]
+    },
+    {
+      "id": "ceiling_light_4",
+      "primitive": "box",
+      "dimensions": [
+        3.2,
+        0.16,
+        0.07
+      ],
+      "position": [
+        0,
+        2.3,
+        3.05
+      ],
+      "color": [
+        1,
+        0.9,
+        0.55,
+        1
+      ]
+    },
+    {
+      "id": "temperature_sensor_1",
+      "primitive": "cylinder",
+      "radius": 0.1,
+      "depth": 0.22,
+      "position": [
+        -3.4,
+        3.3,
+        2.45
+      ],
+      "color": [
+        1,
+        0.55,
+        0.03,
+        1
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "temperature_sensor_2",
+      "primitive": "cylinder",
+      "radius": 0.1,
+      "depth": 0.22,
+      "position": [
+        -1.7,
+        3.3,
+        2.45
+      ],
+      "color": [
+        1,
+        0.55,
+        0.03,
+        1
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "temperature_sensor_3",
+      "primitive": "cylinder",
+      "radius": 0.1,
+      "depth": 0.22,
+      "position": [
+        0,
+        3.3,
+        2.45
+      ],
+      "color": [
+        1,
+        0.55,
+        0.03,
+        1
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "temperature_sensor_4",
+      "primitive": "cylinder",
+      "radius": 0.1,
+      "depth": 0.22,
+      "position": [
+        1.7,
+        3.3,
+        2.45
+      ],
+      "color": [
+        1,
+        0.55,
+        0.03,
+        1
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "temperature_sensor_5",
+      "primitive": "cylinder",
+      "radius": 0.1,
+      "depth": 0.22,
+      "position": [
+        3.4,
+        3.3,
+        2.45
+      ],
+      "color": [
+        1,
+        0.55,
+        0.03,
+        1
+      ],
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ]
+    }
+  ]
+}
