@@ -4,6 +4,8 @@
 
 This is an experimental project, not a mature platform with validated cost savings. It treats AI-generated 3D pages as a replaceable production capability rather than a product moat. The goal is to discover which steps can be automated, which facts require human confirmation, and how one-off AI assistance can become a repeatable, inspectable, and portable digital-twin workflow.
 
+**Codex, Blender, and Three.js are only the current reference nodes.** The project is model-agnostic, 3D-executor-agnostic, and data-source-agnostic. Nodes collaborate through open JSON/API contracts; confirmed calibration and bindings should survive replacement of any node. See the [replaceable workflow and architecture](docs/ARCHITECTURE.md).
+
 **[中文](README.md) | English**
 
 > Making digital twins accessible to ordinary projects by moving from expensive custom implementations toward infrastructure that AI can help build.
